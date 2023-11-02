@@ -31,7 +31,7 @@ app.layout = html.Div(children=[
         dcc.Store(id='selected-index-store', data=[]),
 
         # Pie chart as clickable buttons
-        html.Div([dcc.Input(value='', id='filter-input', placeholder='Filter',
+        html.Div([dcc.Input(value='', id='filter-input', placeholder='Filter: SMARTS pattern',
                             debounce=True, style={'display': 'none'})]),
         html.Div([dcc.Graph(
             id='pie-chart',

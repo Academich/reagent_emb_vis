@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-from utils import uniform_sphere_points, to_spherical_coordinates
+from utils import uniform_sphere_points, to_cartesian_coordinates
 
 
 def update_flat_chart(df: pd.DataFrame):
@@ -13,10 +13,10 @@ def update_flat_chart(df: pd.DataFrame):
         y=df["y"],
         hovertext=df.index,
         hoverinfo='text',
-        text=df["smiles"],
+        text=df["smiles"] + "|" + df["name"],
         mode='markers',
         marker={
-            'size': df["size"],
+            'size': 12,
             'opacity': 0.6,
             'color': color
         }
@@ -51,18 +51,17 @@ def generate_sphere():
 
 def update_sphere_chart(df: pd.DataFrame):
     color = [px.colors.qualitative.Light24[i] for i in df["numerical_label"]]
-    x, y, z = to_spherical_coordinates(df["theta"], df["phi"])
+    x, y, z = to_cartesian_coordinates(df["theta"], df["phi"])
     scatter = go.Scatter3d(
         x=x,
         y=y,
         z=z,
-        text=df["smiles"],
+        text=df["smiles"] + "|" + df["name"],
         hovertext=df.index,
         hoverinfo='text',
         mode='markers',
         marker=dict(size=8, color=color, opacity=0.7),
     )
-    # scatter.update()
     sphere_surface = generate_sphere()
 
     layout = go.Layout(

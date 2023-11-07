@@ -1,0 +1,431 @@
+	smiles	class	name
+0	O	solvent	water
+1	C1CCOC1	solvent	THF
+2	ClCCl	solvent	dichloromethane
+3	CN(C)C=O	solvent	DMF
+4	CO	solvent	methanol
+5	Cl	acid	Hydrochloric acid
+6	CCOC(C)=O	solvent	ethyl acetate
+7	CCN(CC)CC	base	Triethylamine
+8	CCO	solvent	ethanol
+9	O=C([O-])[O-].[K+].[K+]	base	Potassium carbonate
+10	[Na+].[OH-]	base	Sodium hydroxide
+11	C1COCCO1	solvent	1,4-dioxane
+12	CCN(C(C)C)C(C)C	base	diisopropylethylamine
+13	Cc1ccccc1	solvent	toluene
+14	CC#N	solvent	acetonitrile
+15	CC(=O)O	solvent	acetic acid
+16	[H-].[Na+]	base	Sodium hydride
+17	O=C([O-])O.[Na+]	base	Sodium bicarbonate
+18	CCOCC	solvent	diethyl ether
+19	[Pd]	cat	Palladium
+20	O=C(O)C(F)(F)F	solvent	TFA
+21	c1ccncc1	solvent	pyridine
+22	O=C([O-])[O-].[Na+].[Na+]	base	sodium carbonate
+23	CS(C)=O	solvent	DMSO
+24	O=C([O-])[O-].[Cs+].[Cs+]	base	caesium carbonate
+25	c1ccc([P](c2ccccc2)(c2ccccc2)[Pd]([P](c2ccccc2)(c2ccccc2)c2ccccc2)([P](c2ccccc2)(c2ccccc2)c2ccccc2)[P](c2ccccc2)(c2ccccc2)c2ccccc2)cc1	cat	Tetrakis(triphenylphosphine) palladium (0)
+26	[Cl-].[NH4+]	acid	Ammonium chloride
+27	ClC(Cl)Cl	solvent	chloroform
+28	On1nnc2ccccc21	activator	HOBT
+29	CC(C)=O	solvent	acetone
+30	[Li+].[OH-]	base	Lithium hydroxide
+31	[Li]CCCC	base	n-Butyllithium
+32	CCCCCC	solvent	hexane
+33	c1ccc(P(c2ccccc2)c2ccccc2)cc1	red	Triphenylphosphine
+34	[BH4-].[Na+]	red	Sodium borohydride
+35	[K+].[OH-]	base	Potassium hydroxide
+36	CN(C)c1ccncc1	base	4-Dimethylaminopyridine
+37	O=S(=O)(O)O	acid	Sulfuric acid
+38	[H][H]	red	Dihydrogen
+39	ClCCCl	solvent	1,2-dichloroethane
+40	CN(C)C(On1nnc2cccnc21)=[N+](C)C.F[P-](F)(F)(F)(F)F	activator	O-HATU
+41	CCN=C=NCCCN(C)C.Cl	activator	1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride
+42	COCCOC	solvent	1,2-DME
+43	[AlH4-].[Li+]	red	Lithium Aluminium Hydride
+44	CC(C)O	solvent	isopropanol
+45	CC(=O)O[BH-](OC(C)=O)OC(C)=O.[Na+]	red	STAB
+46	O=C(C=Cc1ccccc1)C=Cc1ccccc1.O=C(C=Cc1ccccc1)C=Cc1ccccc1.O=C(C=Cc1ccccc1)C=Cc1ccccc1.[Pd].[Pd]	cat	Pd2(dba)3
+47	CC(=O)[O-].CC(=O)[O-].[Pd+2]	cat	Palladium(II) acetate
+48	Cl[Pd]Cl.[Fe+2].c1ccc(P(c2ccccc2)[c-]2cccc2)cc1.c1ccc(P(c2ccccc2)[c-]2cccc2)cc1	cat	Iron(2+) 2-(diphenylphosphino)-2,4-cyclopentadienide - dichloropalladium (1:2:1)
+49	[Cu]I	cat	Copper(I) iodide
+50	N	base	Ammonia
+51	c1ccccc1	solvent	benzene
+52	[Cl-].[Na+]	ambience	Sodium chloride
+53	Cc1ccc(S(=O)(=O)O)cc1	acid	p-Toluenesulfonic acid
+54	CN1CCCC1=O	solvent	N-methyl-2-pyrrolidone
+55	Cl[Pd](Cl)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1	cat	Dichloro[bis(triphenylphosphine)]palladium
+56	O=P([O-])([O-])[O-].[K+].[K+].[K+]	base	Tripotassium phosphate
+57	CC(C)(C)[O-].[K+]	base	potassium t-butoxide
+58	O=S(Cl)Cl	ox	Thionyl chloride
+59	CC(=O)N(C)C	solvent	dimethylacetamide
+60	O=C(Cl)C(=O)Cl	ox	Oxalyl chloride
+61	C[O-].[Na+]	base	Sodium Methoxide
+62	CCN=C=NCCCN(C)C	activator	1-ethyl-3-[3-(dimethylamino)propyl]carbodiimide
+63	[BH3-]C#N.[Na+]	red	Sodium cyanoborohydride
+64	CN1CCOCC1	base	N-Methylmorpholine
+65	CCCC[N+](CCCC)(CCCC)CCCC.[F-]	base	tetra-n-butylammonium fluoride
+66	[Na]	red	Sodium
+67	CC(=O)[O-].[K+]	base	Potassium acetate
+68	CC(=O)[O-].[Na+]	base	Sodium acetate
+69	[Al+3].[Cl-].[Cl-].[Cl-]	cat	Aluminium chloride
+70	CC(C)(C)[O-].[Na+]	base	Sodium tert-butoxide
+71	BrB(Br)Br	cat	Boron tribromide
+72	[I-].[Na+]	red	Sodium iodide
+73	C1CCC2=NCCCN2CC1	base	DBU
+74	[Fe]	cat	Iron
+75	[Zn]	red	Zinc
+76	[Ni]	cat	Nickel
+77	CC(=O)OC(C)=O	solvent	Ethanoic anhydride
+78	O=P(Cl)(Cl)Cl	ox	Phosphoryl chloride
+79	ClC(Cl)(Cl)Cl	solvent	carbon tetrachloride
+80	C(=NC1CCCCC1)=NC1CCCCC1	activator	dicyclohexylcarbodiimide
+81	[I-].[K+]	red	Potassium iodide
+82	O=C(n1ccnc1)n1ccnc1	activator	Carbonyldiimidazole
+83	CC(C)(C)O	solvent	tert-butanol
+84	Br	acid	Hydrobromic acid
+85	C1CCNCC1	base	Piperidine
+86	CCCCO	solvent	n-butanol
+87	CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21	ligand	Xantphos
+88	CC(C)NC(C)C	base	Diisopropylamine
+89	[C].[Pd]	cat	Palladium on carbon
+90	c1c[nH]cn1	base	imidazole
+91	CCOC(=O)N=NC(=O)OCC	activator	Diethyl azodicarboxylate
+92	C[Si](C)(C)[N-][Si](C)(C)C.[Li+]	base	Lithium bis(trimethylsilyl)amide
+93	NN	red	Hydrazine
+94	CN(C)C(On1nnc2ccccc21)=[N+](C)C.F[B-](F)(F)F	activator	TBTU
+95	CC(C)OC(=O)N=NC(=O)OC(C)C	activator	Diisopropyl azodicarboxylate
+96	CC(C)[N-]C(C)C.[Li+]	base	Lithium diisopropylamide
+97	N#N	ambience	molecular nitrogen
+98	[Mg]	red	Magnesium
+99	[OH-].[OH-].[Pd+2]	cat	Pearlmans Catalyst
+100	c1ccc(P(c2ccccc2)c2ccc3ccccc3c2-c2c(P(c3ccccc3)c3ccccc3)ccc3ccccc23)cc1	ligand	BINAP
+101	O=[Mn]=O	ox	Manganese dioxide
+102	[NH4+].[OH-]	base	Ammonium hydroxide
+103	CN(C)C(On1nnc2ccccc21)=[N+](C)C.F[P-](F)(F)(F)(F)F	activator	HBTU
+104	O=N[O-].[Na+]	red	Sodium nitrite
+105	CC(Cl)Cl	solvent	1,1-dichloroethane
+106	Cc1ccccc1C	solvent	o-xylene
+107	CI	reactant	methyl iodide
+108	O=CO	red	Formic acid
+109	COC(C)(C)C	solvent	Methyl tert-butyl ether
+110	CC[SiH](CC)CC	red	Triethylsilane
+111	O=C(O)CC(O)(CC(=O)O)C(=O)O	red	Citric acid
+112	Cl[Sn]Cl	red	Tin(II) chloride
+113	O=C(OO)c1cccc(Cl)c1	ox	MCPBA
+114	CC(C)c1cc(C(C)C)c(-c2ccccc2P(C2CCCCC2)C2CCCCC2)c(C(C)C)c1	ligand	XPhos
+115	CCCCCCC	solvent	heptane
+116	CC(=O)OI1(OC(C)=O)(OC(C)=O)OC(=O)c2ccccc21	ox	Dess–Martin periodinane
+117	OO	ox	Hydrogen peroxide
+118	CS(=O)(=O)Cl	ox	Methanesulfonyl chloride
+119	[Cl-].[Li+]	ambience	Lithium chloride
+120	CC[O-].[Na+]	base	Sodium ethoxide
+121	II	ox	molecular iodine
+122	CN(C)[P+](On1nnc2ccccc21)(N(C)C)N(C)C.F[P-](F)(F)(F)(F)F	activator	BOP reagent
+123	[Cl-].[Cl-].[Zn+2]	cat	Zinc chloride
+124	CC(C)C[Al+]CC(C)C.[H-]	red	Diisobutylaluminium hydride
+125	O=C=O	ambience	Carbon dioxide
+126	O=C[O-].[NH4+]	red	Ammonium formate
+127	I[Cu]I	cat	copper iodide
+128	CCCC[N+](CCCC)(CCCC)CCCC.[Br-]	base	Tetra-n-butylammonium bromide
+129	C[Si](C)(C)Cl	reactant	Chlorotrimethylsilane
+130	O=S([O-])([O-])=S.[Na+].[Na+]	red	Sodium thiosulfate
+131	CCC(C)=O	solvent	butanone
+132	[F-].[K+]	base	Potassium fluoride
+133	C=O	red	Formaldehyde
+134	O=S(=O)([O-])[O-].[Na+].[Na+]	base	Sodium sulfate
+135	[BH4-].[Li+]	red	lithium borohydride
+136	CCCCP(CCCC)CCCC	red	Tributylphosphine
+137	CCOCC.FB(F)F	cat	Boron trifluoride diethyl etherate
+138	On1nnc2cccnc21	activator	1-Hydroxy-7-azabenzotriazole
+139	CC(C)(C#N)N=NC(C)(C)C#N	activator	Azobisisobutylonitrile
+140	CC(C)COC(=O)Cl	ox	IBCF
+141	CC(=O)[O-].CC(=O)[O-].[Cu+2]	cat	Copper(II) acetate
+142	[Cs+].[F-]	base	Caesium fluoride
+143	CS(=O)(=O)O	acid	Methanesulfonic acid
+144	C1CCCCC1	solvent	cyclohexane
+145	CCCC[N+](CCCC)(CCCC)CCCC.[I-]	red	Tetra-n-butylammonium iodide
+146	O=C(OOC(=O)c1ccccc1)c1ccccc1	ox	Benzoyl peroxide
+147	O=[Pt]=O	cat	Dioxoplatinum
+148	[Fe+2].c1ccc(P(c2ccccc2)[c-]2cccc2)cc1.c1ccc(P(c2ccccc2)[c-]2cccc2)cc1	ligand	1,1-BIS(Diphenylphosphino)Ferrocene
+149	[Cu]	cat	Copper
+150	C[Al](C)C	base	trimethylaluminum
+151	CC(=O)[O-].[NH4+]	acid	Ammonium acetate
+152	O=C(OC(=O)C(F)(F)F)C(F)(F)F	solvent	Trifluoroacetic anhydride
+153	O=S(=O)([O-])[O-].[Mg+2]	ambience	Magnesium sulfate
+154	Cl[Ti](Cl)(Cl)Cl	cat	Titanium tetrachloride
+155	C[Si](C)(C)[N-][Si](C)(C)C.[Na+]	base	NaHMDS
+156	CC(C)C[AlH]CC(C)C	red	Diisobutylaluminium hydride
+157	[Pt]	cat	Platinum
+158	C1COCCOCCOCCOCCOCCO1	ligand	18-Crown-6
+159	F[P-](F)(F)(F)(F)F.c1ccc2c(c1)nnn2O[P+](N1CCCC1)(N1CCCC1)N1CCCC1	activator	PyBop
+160	CCOC(=O)Cl	ox	Ethyl chloroformate
+161	COc1ccccc1	solvent	Anisole
+162	Cc1ccccc1P(c1ccccc1C)c1ccccc1C	ligand	Tris(2-methylphenyl)phosphine
+163	[Li]C(C)(C)C	base	tert-Butyllithium
+164	O=C(N=NC(=O)N1CCCCC1)N1CCCCC1	activator	Diazene-1,2-diylbis(piperidin-1-ylmethanone)
+165	COc1cccc(OC)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1	ligand	SPhos
+166	B.C1CCOC1	red	Borane - tetrahydrofuran (1:1)
+167	Cc1cccc(C)n1	base	2,6-lutidine
+168	CN(C)c1ccccn1	base	2-(Dimethylamino)pyridine
+169	CN(C)P(=O)(N(C)C)N(C)C	solvent	HMPA
+170	CC(C)OC(C)C	solvent	Diisopropyl ether
+171	C	cat	???
+172	CCCCC	solvent	pentane
+173	O=S([O-])[O-].[Na+].[Na+]	red	sodium sulfite
+174	BrBr	ox	Bromine
+175	O=S([O-])O.[Na+]	red	Sodium bisulfite
+176	OCCO	solvent	ethylene glycol
+177	[Br-].[K+]	ambience	Potassium bromide
+178	CC(C)[Mg]Cl	reactant	Chloro(isopropyl)magnesium
+179	C[N+]1([O-])CCOCC1	ox	N-methylmorpholine-N-oxide
+180	O=S([O-])S(=O)[O-].[Na+].[Na+]	red	Sodium dithionite
+181	O=[Pt]	cat	Oxoplatinum
+182	O=C(OC(Cl)(Cl)Cl)OC(Cl)(Cl)Cl	ox	Triphosgene
+183	CCCP1(=O)OP(=O)(CCC)OP(=O)(CCC)O1	activator	PPACA
+184	Clc1ccccc1	solvent	chlorobenzene
+185	CC(=O)Cl	solvent	Acetyl chloride
+186	Cc1ccc(S(=O)(=O)[O-])cc1.c1cc[nH+]cc1	acid	Pyridinium p-toluenesulfonate
+187	C1CCC(P(C2CCCCC2)C2CCCCC2)CC1	ligand	Tricyclohexylphosphine
+188	CN(C)CCN(C)C	base	TMEDA
+189	O=P(O)(O)O	acid	Phosphoric acid
+190	Cl.c1ccncc1	acid	Pyridine hydrochloride
+191	O=C1CCC(=O)N1Br	ox	N-Bromosuccinimide
+192	O=S(=O)([O-])O.[K+]	base	Potassium bisulfate
+193	Cl[Pd]Cl	cat	Palladium(II) chloride
+194	Oc1cccc2[nH]nnc12	activator	1H-Benzotriazol-4-ol
+195	O=[Cr](=O)([O-])Cl.c1cc[nH+]cc1	ox	Pyridinium chlorochromate
+196	CCNCC	base	Diethylamine
+197	B	red	Borane
+198	ClP(Cl)(Cl)(Cl)Cl	ox	Phosphorus pentachloride
+199	O=C1CCC(=O)N1Cl	ox	N-Chlorosuccinimide
+200	C1CCNC1	base	Pyrrolidine
+201	CCCO	solvent	1-propanol
+202	C[Si](C)(C)[N-][Si](C)(C)C.[K+]	base	Potassium hexamethyldisilazide
+203	Cc1ccc(S(=O)(=O)Cl)cc1	activator	Tosyl chloride
+204	[K]	red	Potassium
+205	N#CC1=C(C#N)C(=O)C(Cl)=C(Cl)C1=O	ox	DDQ
+206	CC(C)[O-].CC(C)[O-].CC(C)[O-].CC(C)[O-].[Ti+4]	cat	Titanium(4+) tetrapropan-2-olate
+207	CC(C)(C)P(C(C)(C)C)C(C)(C)C	ligand	P(t-Bu)3
+208	CCOC(OCC)OCC	unk	Triethyl orthoformate
+209	CSC	red	Dimethyl sulfide
+210	O=C([O-])C(O)C(O)C(=O)[O-].[K+].[Na+]	base	Potassium sodium tartrate
+211	COCCO	solvent	methoxyethanol
+212	O=C(O)C1CCCN1	ligand	DL-Proline
+213	[Li]	red	Lithium
+214	O=S(=O)(O)C(F)(F)F	acid	Trifluoromethanesulfonic acid
+215	O=S(=O)([O-])[O-].[Cu+2]	cat	Copper(II) sulfate
+216	C[Mg]Br	reactant	Bromo(methyl)magnesium
+217	CCCC[N+](CCCC)(CCCC)CCCC.O=S(=O)([O-])O	base	Tetrabutylammonium bisulfate
+218	Clc1ccccc1Cl	solvent	1,2-dichlorobenzene
+219	[Ca+2].[Cl-].[Cl-]	ambience	Calcium chloride
+220	BrCCBr	solvent	EDB
+221	Cl[Sn](Cl)(Cl)Cl	ox	Tin(IV) chloride
+222	Cl[Cu]	cat	Copper(I) chloride
+223	CC(C)(C)OC(=O)OC(=O)OC(C)(C)C	reactant	Di-tert-butyl dicarbonate
+224	Oc1ccccc1	solvent	Phenol
+225	O=C(C=Cc1ccccc1)C=Cc1ccccc1.O=C(C=Cc1ccccc1)C=Cc1ccccc1.[Pd]	cat	1,5-Diphenyl-1,4-pentadien-3-one - palladium (2:1)
+226	CN(C)c1ccccc1	base	N,N-Dimethylaniline
+227	C1CN2CCN1CC2	base	DABCO
+228	CC[N+](CC)(CC)Cc1ccccc1.[Cl-]	base	Benzyltriethylammonium chloride
+229	CNCCNC	ligand	1,2-Dimethylethylenediamine
+230	OB(O)c1ccccc1	reactant	Phenylboronic acid
+231	C[P+](c1ccccc1)(c1ccccc1)c1ccccc1.[Br-]	reactant	Methyltriphenylphosphonium bromide
+232	CNC	base	Dimethylamine
+233	CNC1CCCCC1NC	ligand	N,N'-Dimethyl-1,2-cyclohexanediamine
+234	COS(=O)(=O)OC	reactant	Dimethyl sulfate
+235	ClCl	ox	Chlorine
+236	CC(C)N=C=NC(C)C	activator	N,N′-diisopropylcarbodiimide
+237	c1ccc(Oc2ccccc2)cc1	solvent	Diphenyl ether
+238	O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3	activator	Phosphorus pentoxide
+239	O=[Os](=O)(=O)=O	ox	Osmium tetroxide
+240	[Cl-].[Cl-].[Mg+2]	base	Magnesium chloride
+241	COCCOCCOC	solvent	diglyme
+242	[Li]C(C)CC	base	sec-Butyllithium
+243	COC(OC)OC	ox	Trimethyl orthoformate
+244	C[Si](C)(C)I	reactant	Trimethylsilyl iodide
+245	C1COCCN1	base	Morpholine
+246	CN(C)c1ccccc1-c1ccccc1P(C1CCCCC1)C1CCCCC1	ligand	DavePhos
+247	O=O	ox	Molecular oxygen
+248	O=P([O-])(O)O.[Na+]	base	Monosodium phosphate
+249	CC(C)(C)ON=O	ox	1,1-Dimethylethyl nitrite
+250	CN	base	methylamine
+251	O=S(=O)(OS(=O)(=O)C(F)(F)F)C(F)(F)F	activator	Trifluoromethanesulfonic anhydride
+252	CC(=O)CC(C)C	solvent	4-Methylpentan-2-one
+253	ClB(Cl)Cl	cat	Boron trichloride
+254	CC=C(C)C	activator	2-Methylbut-2-ene
+255	O=C([O-])O.[K+]	base	Potassium hydrogen carbonate
+256	O=C(O)C(=O)O	red	Oxalic acid
+257	[O-][Cl+3]([O-])([O-])O	ox	Perchloric acid
+258	O=C(O)C=CC(=O)O	unk	Butenedioic acid
+259	CC(C)(C)OC(=O)N=NC(=O)OC(C)(C)C	activator	Di-tert-butyl azodicarboxylate
+260	COC(OC)N(C)C	unk	1,1-dimethoxytrimethylamine
+261	CC(C)(C)[P]([Pd][P](C(C)(C)C)(C(C)(C)C)C(C)(C)C)(C(C)(C)C)C(C)(C)C	cat	Bis[tris(2-methyl-2-propanyl)phosphine]palladium
+262	O=[Cr](=O)=O	ox	Chromium trioxide
+263	CCOP(=O)(C#N)OCC	activator	DEPC
+264	[Br-].[Li+]	base	Lithium bromide
+265	O=S(=O)(Cl)Cl	ox	Sulfuryl chloride
+266	Br[P+](N1CCCC1)(N1CCCC1)N1CCCC1.F[P-](F)(F)(F)(F)F	activator	PyBroP
+267	CC1CCCO1	solvent	2-methyl-THF
+268	[Na+].[O-]Cl	ox	Sodium hypochlorite
+269	CC1(C)C2CCC1(CS(=O)(=O)O)C(=O)C2	acid	Camphorsulfonic acid
+270	CC1(C)OB(B2OC(C)(C)C(C)(C)O2)OC1(C)C	reactant	Bis(pinacolato)diboron
+271	NCCN	base	Ethylenediamine
+272	CN1CCCN(C)C1=O	solvent	DMPU
+273	CC[Mg]Br	reactant	Ethylmagnesium bromide
+274	[Na+].[O-][I+3]([O-])([O-])[O-]	ox	Sodium metaperiodate
+275	Cl.NO	acid	Hydroxyamine hydrochloride
+276	B.CSC	red	Di-methylsulfide borane
+277	Nc1ccccc1	base	Aniline
+278	C[Si](C)(C)OS(=O)(=O)C(F)(F)F	reactant	TMSOTf
+279	C[Si](C)(C)Br	reactant	TMBS
+280	CCN1CCOCC1	base	NEM
+281	CC(C)(C)P(c1ccccc1-c1ccccc1)C(C)(C)C	ligand	JohnPhos
+282	FB(F)F	cat	Boron trifluoride
+283	c1ccc(-c2ccccc2P(C2CCCCC2)C2CCCCC2)cc1	ligand	CyJohnPhos
+284	NC1CCCCC1N	ligand	1,2-Cyclohexanediamine
+285	[Al]	red	Aluminium hydride
+286	Cl[Ni]Cl	cat	Nickel(II) chloride
+287	[C-]#N.[Na+]	base	Sodium cyanide
+288	S=C=S	solvent	carbon disulfide
+289	CCCC[N+](CCCC)(CCCC)CCCC.[Cl-]	base	Tetrabutylammonium chloride
+290	CC(=O)OC(C)C	solvent	Isopropyl acetate
+291	c1ccc2ncccc2c1	activator	Quinoline
+292	B1C2CCCC1CCC2	red	9-Borabicyclo[3.3.1]nonane
+293	O=C([O-])[O-].[Ca+2]	ambience	Calcium carbonate
+294	O=P([O-])(O)O.[K+]	base	Monopotassium phosphate
+295	c1ccc(P(CCCP(c2ccccc2)c2ccccc2)c2ccccc2)cc1	ligand	Dppp
+296	C1=CCCCC1	unk	Cyclohexene
+297	C[Si](C)(C)N[Si](C)(C)C	base	Hexamethyldisilazane
+298	CC(C)CCON=O	ox	Iso-Amyl nitrite
+299	[C-]#N.[K+]	base	Potassium cyanide
+300	[Rh]	cat	Rhodium
+301	O=S1(=O)CCCC1	solvent	Sulfolane
+302	[Li]C	base	Methyllithium
+303	CC(Cl)OC(=O)Cl	activator	ACE-Cl
+304	CCI	reactant	Ethyl iodide
+305	O=CC(O)C(O)C(O)C(O)CO	reactant	???
+306	[I-].[Li+]	red	Lithium iodide
+307	O=[N+]([O-])c1ccccc1	solvent	Nitrobenzene
+308	[C]=O	ambience	carbon monoxide
+309	O=S(=O)([O-])O.[Na+]	base	Sodium bisulfate
+310	CCC[N+](CCC)(CCC)CCC.O=[Ru](=O)(=O)[O-]	ox	Tetrapropylammonium perruthenate
+311	O=[N+]([O-])O	ox	Nitric acid
+312	O=C1OC(C(O)CO)C([O-])=C1O.[Na+]	red	???
+313	O=C1OCCN1P(=O)(Cl)N1CCOC1=O	activator	BOP-CL
+314	[Na+].[O-][Cl+][O-]	ox	Sodium chlorite
+315	O=[Mn](=O)(=O)[O-].[K+]	ox	Potassium permanganate
+316	Cc1cc(C)nc(C)c1	base	2,4,6-Collidine
+317	NC(CO)(CO)CO	ambience	Tris(hydroxymethyl)aminomethane
+318	CCCC[SnH](CCCC)CCCC	red	Tributyltin hydride
+319	CCCCN(CCCC)CCCC	base	Tributylamine
+320	O=S([O-])OO.[K+]	ox	Potassium (hydroperoxysulfinyl)oxidanide
+321	NC(N)=O	unk	Urea
+322	C[N+](=O)[O-]	solvent	nitromethane
+323	Oc1ccc(O)cc1	ox	Hydroquinone
+324	CC(C)(C)C(=O)Cl	activator	PIVALYL CHLORIDE
+325	C1N2CN3CN1CN(C2)C3	base	Hexamine
+326	OCC(F)(F)F	acid	2,2,2-Trifluoroethanol
+327	c1cnc2c(c1)ccc1cccnc12	ligand	phenanthroline
+328	[S]	red	Sulfur
+329	CCN(CC)CC.Cl	acid	YE2111500
+330	[Br-].[Br-].[Zn+2]	cat	Zinc bromide
+331	O=C(Cl)Cl	activator	Phosgene
+332	C1COCCOCCOCCOCCO1	ligand	15-Crown-5
+333	I	red	Hydroiodic acid
+334	CC1(C)CCCC(C)(C)N1[O]	ox	TEMPO
+335	CC[Zn]CC	base	???
+336	COC[P+](c1ccccc1)(c1ccccc1)c1ccccc1.[Cl-]	reactant	Methoxymethyltriphenylphosphoniumchloride
+337	CB1OB(C)OB(C)O1	reactant	Trimethylboroxin
+338	O=[N+]([O-])[O-].[Ag+]	ox	Silver nitrate
+339	CC1(C)CCCC(C)(C)N1	base	TN4220000
+340	CCOCCO	solvent	2-Ethoxyethanol
+341	[N-]=[N+]=NP(=O)(c1ccccc1)c1ccccc1	activator	Diphenylphosphinicazid
+342	C=C[Sn](CCCC)(CCCC)CCCC	reactant	Tributylvinyltin
+343	O=C1CCC(=O)N1O	activator	N-Hydroxysuccinimide
+344	ClP(Cl)Cl	ox	Phosphorus trichloride
+345	CCCC[Sn](=O)CCCC	cat	Dibutyloxotin
+346	CCC#N	solvent	Propionitrile
+347	CCOC(=O)CBr	reactant	Ethyl bromoacetate
+348	CC(C)(C)OO	ox	tert-Butyl hydroperoxide
+349	OBO	reactant	Boronic acid
+350	NS(=O)(=O)O	acid	Sulfamic acid
+351	O=[Cr](=O)([O-])O[Cr](=O)(=O)[O-].c1cc[nH+]cc1.c1cc[nH+]cc1	ox	Cornforth reagent
+352	CCN(CC)c1ccccc1	base	N,N-Diethylaniline
+353	O=C(c1ncc[nH]1)c1ncc[nH]1	activator	???
+354	COc1nc(OC)nc([N+]2(C)CCOCC2)n1.[Cl-]	activator	MMTM
+355	O=Cc1ccccc1	unk	Benzaldehyde
+356	CN(C)c1ccc(P(C(C)(C)C)C(C)(C)C)cc1.CN(C)c1ccc(P(C(C)(C)C)C(C)(C)C)cc1.Cl[Pd]Cl	cat	Pd(amphos)Cl2
+357	OCCOCCO	solvent	Diethylene glycol
+358	Sc1ccccc1	base	Thiophenol
+359	CCS	base	Ethanethiol
+360	Cc1c(CCO)sc[n+]1Cc1ccccc1.[Cl-]	unk	3-Benzyl-5-(2-hydroxyethyl)-4-methylthiazolium chloride
+361	[Cu]Br	cat	copper bromide
+362	[N-]=[N+]=[N-].[Na+]	reactant	Sodium azide
+363	CN1CCN(C)C1=O	solvent	1,3-Dimethyl-2-imidazolidinone
+364	Cl[Fe](Cl)Cl	cat	iron(iii) chloride
+365	[Sn]	cat	Tin
+366	Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1	activator	Butylated hydroxytoluene
+367	Cc1ccccc1S(=O)(=O)O	acid	2-Toluenesulfonic acid
+368	O=S(=O)([O-])C(F)(F)F.O=S(=O)([O-])C(F)(F)F.O=S(=O)([O-])C(F)(F)F.[Yb+3]	cat	Ytterbium(III) triflate
+369	COB(OC)OC	reactant	Trimethyl borate
+370	O=S([O-])S(=O)(=O)[O-].[Na+].[Na+]	activator	Sodium metabisulfite
+371	O=C([O-])[O-].[Ag+2]	ox	Silver(2+) carbonate
+372	[I-].[I-].[Zn+2]	cat	Zinc iodide
+373	COC(=O)Cl	activator	Methyl chloroformate
+374	C[n+]1ccccc1Cl.[I-]	activator	2-Chloro-1-methylpyridinium iodide
+375	Oc1cccc2cccnc12	ligand	8-Hydroxyquinoline
+376	CCC(C)(C)O	solvent	tert-Amyl Alcohol
+377	[H-].[K+]	base	Potassium hydride
+378	CNC.Cl	acid	Dimethylammonium chloride
+379	[NH2-].[Na+]	base	Sodamide
+380	[C].[OH-].[OH-].[Pd+2]	cat	Palladium(2+) hydroxide - methane (1:2:1)
+381	[Br-].[Na+]	ambience	Sodium bromide
+382	CC(C)Oc1cccc(OC(C)C)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1	ligand	RuPhos
+383	BrCc1ccccc1	reactant	Benzyl bromide
+384	CN(C)C(N(C)C)=[N+]1N=[N+]([O-])c2ncccc21.F[P-](F)(F)(F)(F)F	activator	N-HATU
+385	CN(C)C(=N)N(C)C	base	1,1,3,3-Tetramethylguanidine
+386	C[Si](C)(C)C=[N+]=[N-]	reactant	trimethylsilyldiazomethane
+387	CCCCCCCC[N+](C)(CCCCCCCC)CCCCCCCC.[Cl-]	base	methyltrioctylammoniumchloride
+388	OCC(O)CO	solvent	glycerin
+389	[Ba+2].[OH-].[OH-]	base	Barium hydroxide
+390	NCc1ccccc1	base	Benzylamine
+391	CCC(=O)O	acid	Propionic acid
+392	c1coc(P(c2ccco2)c2ccco2)c1	ligand	TFP
+393	O=[Ag]	ox	Oxosilver
+394	CCCP(=O)=O	activator	Allylphosphinic acid
+395	CC[O-].CC[O-].CC[O-].CC[O-].[Ti+4]	cat	ethyl titanate
+396	C[Mg]Cl	reactant	MFCD00000468
+397	CC(C)(C)[PH+](C(C)(C)C)C(C)(C)C.F[B-](F)(F)F	ligand	TTBP ?? HBF4
+398	CCBr	reactant	Bromoethane
+399	NCCO	unk	Ethanolamine
+400	CC=O	solvent	Acetaldehyde
+401	Cn1ccnc1	base	1-Methylimidazole
+402	[H-].[Li+]	base	Lithium hydride
+403	CC(C)=C(Cl)N(C)C	activator	Ghosez′s reagent
+404	O=C(O)c1ccccc1	acid	Benzoic acid
+405	CN1CCCC1	base	UY1420500
+406	Cl[Cu]Cl	cat	Copper(II) chloride
+407	Cl.Cl.Nc1c(F)c(N)c(F)c(F)c1F	activator	2,4,5,6-Tetrafluoro-1,3-benzenediamine dihydrochloride
+408	COc1ccc(O)cc1	cat	mequinol
+409	CN(C)C(=O)N=NC(=O)N(C)C	activator	TMAD
+410	CP(C)C	red	Trimethylphosphine
+411	CCCCN	base	n-butylamine
+412	C=[N+]=[N-]	reactant	Diazomethane
+413	[Ce+3].[Cl-].[Cl-].[Cl-]	cat	cerium(iii) chloride
+414	CCC(C)[BH-](C(C)CC)C(C)CC.[Li+]	red	L-selectride
+415	CC[N+](CC)(CC)S(=O)(=O)N=C([O-])OC	ox	Burgess reagent
+416	N#C[Cu]	cat	Copper(I) cyanide
+417	CC(=O)[O-].CC(=O)[O-].[Pb+2].[Pd]	cat	???
+418	O=C(Cl)c1ccccc1	unk	Benzoyl chloride
+419	N=C=N	activator	carbodiimide
+420	CC(C)c1cc(C(C)C)c(-c2ccccc2P(C(C)(C)C)C(C)(C)C)c(C(C)C)c1	ligand	tBuXPhos
+421	F	acid	Hydrofluoric acid
+422	C[N+](C)(C)Cc1ccccc1.[OH-]	base	Benzyltrimethylammonium hydroxide
+423	O=C(Cl)Oc1ccccc1	activator	FG3850000
+424	O=[N+]([O-])[O-].O=[N+]([O-])[O-].O=[N+]([O-])[O-].O=[N+]([O-])[O-].O=[N+]([O-])[O-].O=[N+]([O-])[O-].[Ce+4].[NH4+].[NH4+]	ox	ammonium cerium(iv) nitrate
+425	c1ccc([P]([Pd][P](c2ccccc2)(c2ccccc2)c2ccccc2)(c2ccccc2)c2ccccc2)cc1	cat	???
+426	CCC1CN2CCC1CC2C(Oc1nnc(OC(c2ccnc3ccc(OC)cc23)C2CC3CCN2CC3CC)c2ccccc12)c1ccnc2ccc(OC)cc12	ligand	9,9'-[1,4-Phthalazinediylbis(oxy)]bis(6'-methoxy-10,11-dihydrocinchonan)
+427	O=C(O)CN(CCN(CC(=O)O)CC(=O)O)CC(=O)O	reactant	Ethylenediaminetetraacetic acid
+428	O=C([O-])[O-].[Li+].[Li+]	base	Lithium carbonate
+429	COc1ccc(OC)c(P(C2CCCCC2)C2CCCCC2)c1-c1c(C(C)C)cc(C(C)C)cc1C(C)C	ligand	BrettPhos

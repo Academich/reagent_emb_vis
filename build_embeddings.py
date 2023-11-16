@@ -1,14 +1,36 @@
 import math
 import argparse
 from typing import Iterable
-import json
+from functools import partial
+from multiprocessing import Pool, cpu_count
 from collections import Counter
 from itertools import combinations
+
 import pandas as pd
 import numpy as np
 from scipy.sparse import csc_matrix
 from scipy.sparse.linalg import svds
 from umap import UMAP
+
+
+def __smi_mol_counter(separator: str, smi_col: pd.Series):
+    return smi_col.apply(lambda s: Counter(s.split(separator))).sum()
+
+
+def get_reagent_statistics(smi_col: pd.Series, separator: str = ";", chunk_size: int = 1000):
+    """
+    Obtain frequency of the molecular occurrence among the reactants/reagents of all reactions
+    in the form of a Counter. Uses process pool for faster processing.
+    :param: chunk_size: size of a subset of the data to process at once
+    :returns: One counter with reagent occurrences for all reactions in the specified pandas Series.
+    """
+    n_entries = smi_col.shape[0]
+    f = partial(__smi_mol_counter, separator)
+
+    with Pool(cpu_count()) as p:
+        bigger_counters = p.map(f, [smi_col[i: i + chunk_size] for i in range(0, n_entries, chunk_size)])
+
+    return np.sum(bigger_counters)
 
 
 def build_pmi_matrix(data: Iterable[list[str]],
@@ -74,13 +96,15 @@ def standard_smiles_information(smiles: pd.Series,
 
 
 def main(args) -> None:
-    target = pd.read_csv(args.input, header=None)[0].str.split(args.separator)
-    with open(args.reagents) as f:
-        i2r = {int(k): v for k, v in json.load(f).items()}
-        r2i = {v: k for k, v in i2r.items()}
+    target = pd.read_csv(args.input, header=None)[0]
+    print("Counting reagents...")
+    reagent_occurrence_counter = get_reagent_statistics(target, separator=args.separator)
+    i2r = {i: smi for i, (smi, count) in enumerate(reagent_occurrence_counter.most_common()) if count >= args.min_count}
+    r2i = {v: k for k, v in i2r.items()}
     smiles = [None] * len(i2r)
     for i in i2r:
         smiles[i] = i2r[i]
+    target = target.str.split(args.separator)
 
     print("Building PMI matrix...")
     pmi_scores = build_pmi_matrix(target, r2i)
@@ -99,7 +123,8 @@ def main(args) -> None:
                                                   dict(standard_reagents.set_index("smiles")["name"]),
                                                   dict(standard_reagents.set_index("smiles")["class"]))
     else:
-        smiles_info = pd.Series(smiles)
+        smiles_info = pd.DataFrame(smiles)
+        smiles_info.columns = ["smiles"]
     result = pd.concat((projection_result, smiles_info), axis=1)
     result.to_csv(args.output, index=False)
 
@@ -108,8 +133,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", "-i", type=str,
                         help="Path to the file with reagent sets for reactions.")
-    parser.add_argument("--reagents", "-r", type=str,
-                        help="Path to the JSON file with unique reagents that occur in the input.")
+    parser.add_argument("--min_count", type=int, default=0,
+                        help="Minimum number of occurrences for a reagent. "
+                             "Reagents that occur less than this number of times in the dataset are discarded.")
     parser.add_argument("--standard", type=str, default=None,
                         help="Path to the file with standard reagent information")
     parser.add_argument("--output", "-o", type=str,

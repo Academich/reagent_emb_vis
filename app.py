@@ -219,7 +219,7 @@ def store_hover_text(n_clicks):
 def update_img_from_flat_map(hoverData):
     try:
         smiles, name = hoverData['points'][0]['text'].split("|")
-        svg = ut.smi2svg(smiles)
+        svg = ut.smi2svg(smiles.replace("\\", "").replace("/", ""))
         text_smiles = html.P(smiles,
                              style={'font-size': '20px', 'font-family': 'Courier'})
         text_name = html.P(name,

@@ -184,7 +184,7 @@
 182	O=C(OC(Cl)(Cl)Cl)OC(Cl)(Cl)Cl	ox	Triphosgene
 183	CCCP1(=O)OP(=O)(CCC)OP(=O)(CCC)O1	activator	PPACA
 184	Clc1ccccc1	solvent	chlorobenzene
-185	CC(=O)Cl	solvent	Acetyl chloride
+185	CC(=O)Cl	reactant	Acetyl chloride
 186	Cc1ccc(S(=O)(=O)[O-])cc1.c1cc[nH+]cc1	acid	Pyridinium p-toluenesulfonate
 187	C1CCC(P(C2CCCCC2)C2CCCCC2)CC1	ligand	Tricyclohexylphosphine
 188	CN(C)CCN(C)C	base	TMEDA
@@ -257,9 +257,9 @@
 255	O=C([O-])O.[K+]	base	Potassium hydrogen carbonate
 256	O=C(O)C(=O)O	red	Oxalic acid
 257	[O-][Cl+3]([O-])([O-])O	ox	Perchloric acid
-258	O=C(O)C=CC(=O)O	unk	Butenedioic acid
+258	O=C(O)C=CC(=O)O	reactant	Butenedioic acid
 259	CC(C)(C)OC(=O)N=NC(=O)OC(C)(C)C	activator	Di-tert-butyl azodicarboxylate
-260	COC(OC)N(C)C	unk	DMF-DMA
+260	COC(OC)N(C)C	reactant	DMF-DMA
 261	CC(C)(C)[P]([Pd][P](C(C)(C)C)(C(C)(C)C)C(C)(C)C)(C(C)(C)C)C(C)(C)C	cat	Bis[tris(2-methyl-2-propanyl)phosphine]palladium
 262	O=[Cr](=O)=O	ox	Chromium trioxide
 263	CCOP(=O)(C#N)OCC	activator	DEPC
@@ -269,7 +269,7 @@
 267	CC1CCCO1	solvent	2-methyl-THF
 268	[Na+].[O-]Cl	ox	Sodium hypochlorite
 269	CC1(C)C2CCC1(CS(=O)(=O)O)C(=O)C2	acid	Camphorsulfonic acid
-270	CC1(C)OB(B2OC(C)(C)C(C)(C)O2)OC1(C)C	reactant	Bis(pinacolato)diboron
+270	CC1(C)OB(B2OC(C)(C)C(C)(C)O2)OC1(C)C	red	Bis(pinacolato)diboron
 271	NCCN	base	Ethylenediamine
 272	CN1CCCN(C)C1=O	solvent	DMPU
 273	CC[Mg]Br	reactant	Ethylmagnesium bromide
@@ -320,7 +320,7 @@
 318	CCCC[SnH](CCCC)CCCC	red	Tributyltin hydride
 319	CCCCN(CCCC)CCCC	base	Tributylamine
 320	O=S([O-])OO.[K+]	ox	Potassium (hydroperoxysulfinyl)oxidanide
-321	NC(N)=O	unk	Urea
+321	NC(N)=O	solvent	Urea
 322	C[N+](=O)[O-]	solvent	nitromethane
 323	Oc1ccc(O)cc1	ox	Hydroquinone
 324	CC(C)(C)C(=O)Cl	activator	PIVALYL CHLORIDE
@@ -398,7 +398,7 @@
 396	C[Mg]Cl	reactant	MFCD00000468
 397	CC(C)(C)[PH+](C(C)(C)C)C(C)(C)C.F[B-](F)(F)F	ligand	TTBP ?? HBF4
 398	CCBr	reactant	Bromoethane
-399	NCCO	unk	Ethanolamine
+399	NCCO	base	Ethanolamine
 400	CC=O	solvent	Acetaldehyde
 401	Cn1ccnc1	base	1-Methylimidazole
 402	[H-].[Li+]	base	Lithium hydride

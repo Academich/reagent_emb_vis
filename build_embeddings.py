@@ -70,7 +70,7 @@ def umap_projection(embeddings: np.array) -> pd.DataFrame:
     :param embeddings:
     :return: Pandas Dataframe with coordinates of projected points.
     """
-    xy = UMAP().fit_transform(embeddings)
+    xy = UMAP(random_state=12345).fit_transform(embeddings)
     sphere_mapper = UMAP(output_metric='haversine', random_state=12345, n_neighbors=30).fit(embeddings)
     result = pd.DataFrame(np.hstack((xy, sphere_mapper.embedding_)))
     result.columns = ["x", "y", "theta", "phi"]

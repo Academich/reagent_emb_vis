@@ -5,6 +5,7 @@ charset-normalizer==3.3.2
 click==8.1.7
 dash==2.14.1
 dash-core-components==2.0.0
+dash-dangerously-set-inner-html==0.0.2
 dash-html-components==2.0.0
 dash-table==5.0.0
 Flask==3.0.0

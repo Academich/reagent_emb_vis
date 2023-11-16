@@ -81,7 +81,6 @@ def main(args) -> None:
     smiles = [None] * len(i2r)
     for i in i2r:
         smiles[i] = i2r[i]
-    standard_reagents = pd.read_csv(args.standard, index_col=[0], sep='\t')
 
     print("Building PMI matrix...")
     pmi_scores = build_pmi_matrix(target, r2i)
@@ -94,9 +93,13 @@ def main(args) -> None:
     print("Building UMAP projection...")
     projection_result = umap_projection(embeddings)
 
-    smiles_info = standard_smiles_information(pd.Series(smiles),
-                                              dict(standard_reagents.set_index("smiles")["name"]),
-                                              dict(standard_reagents.set_index("smiles")["class"]))
+    if args.standard is not None:
+        standard_reagents = pd.read_csv(args.standard, index_col=[0], sep='\t')
+        smiles_info = standard_smiles_information(pd.Series(smiles),
+                                                  dict(standard_reagents.set_index("smiles")["name"]),
+                                                  dict(standard_reagents.set_index("smiles")["class"]))
+    else:
+        smiles_info = pd.Series(smiles)
     result = pd.concat((projection_result, smiles_info), axis=1)
     result.to_csv(args.output, index=False)
 

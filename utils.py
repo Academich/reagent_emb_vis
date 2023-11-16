@@ -21,6 +21,10 @@ def parse_uploaded_content(contents) -> pd.DataFrame | Div:
         df = pd.read_csv(io.StringIO(decoded.decode("utf-8")))
         if "class" in df.columns:
             df["numerical_label"] = df["class"].map({v: i for i, v in enumerate(sorted(df["class"].unique()))})
+        else:
+            df["numerical_label"] = 0
+            df["class"] = "All molecules"
+            df["name"] = ''
     except Exception as e:
         return Div(["There was an error processing this file."])
 

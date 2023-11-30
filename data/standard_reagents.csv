@@ -68,9 +68,9 @@
 66	[Na]	red	Sodium
 67	CC(=O)[O-].[K+]	base	Potassium acetate
 68	CC(=O)[O-].[Na+]	base	Sodium acetate
-69	[Al+3].[Cl-].[Cl-].[Cl-]	cat	Aluminium chloride
+69	[Al+3].[Cl-].[Cl-].[Cl-]	lewis_acid	Aluminium chloride
 70	CC(C)(C)[O-].[Na+]	base	Sodium tert-butoxide
-71	BrB(Br)Br	cat	Boron tribromide
+71	BrB(Br)Br	lewis_acid	Boron tribromide
 72	[I-].[Na+]	red	Sodium iodide
 73	C1CCC2=NCCCN2CC1	base	DBU
 74	[Fe]	cat	Iron
@@ -122,7 +122,7 @@
 120	CC[O-].[Na+]	base	Sodium ethoxide
 121	II	ox	molecular iodine
 122	CN(C)[P+](On1nnc2ccccc21)(N(C)C)N(C)C.F[P-](F)(F)(F)(F)F	activator	BOP reagent
-123	[Cl-].[Cl-].[Zn+2]	cat	Zinc chloride
+123	[Cl-].[Cl-].[Zn+2]	lewis_acid	Zinc chloride
 124	CC(C)C[Al+]CC(C)C.[H-]	red	Diisobutylaluminium hydride
 125	O=C=O	ambience	Carbon dioxide
 126	O=C[O-].[NH4+]	red	Ammonium formate
@@ -136,7 +136,7 @@
 134	O=S(=O)([O-])[O-].[Na+].[Na+]	base	Sodium sulfate
 135	[BH4-].[Li+]	red	lithium borohydride
 136	CCCCP(CCCC)CCCC	red	Tributylphosphine
-137	CCOCC.FB(F)F	cat	Boron trifluoride diethyl etherate
+137	CCOCC.FB(F)F	lewis_acid	Boron trifluoride diethyl etherate
 138	On1nnc2cccnc21	activator	1-Hydroxy-7-azabenzotriazole
 139	CC(C)(C#N)N=NC(C)(C)C#N	activator	Azobisisobutylonitrile
 140	CC(C)COC(=O)Cl	ox	IBCF
@@ -252,7 +252,7 @@
 250	CN	base	methylamine
 251	O=S(=O)(OS(=O)(=O)C(F)(F)F)C(F)(F)F	activator	Trifluoromethanesulfonic anhydride
 252	CC(=O)CC(C)C	solvent	4-Methylpentan-2-one
-253	ClB(Cl)Cl	cat	Boron trichloride
+253	ClB(Cl)Cl	lewis_acid	Boron trichloride
 254	CC=C(C)C	activator	2-Methylbut-2-ene
 255	O=C([O-])O.[K+]	base	Potassium hydrogen carbonate
 256	O=C(O)C(=O)O	red	Oxalic acid
@@ -281,7 +281,7 @@
 279	C[Si](C)(C)Br	reactant	TMBS
 280	CCN1CCOCC1	base	NEM
 281	CC(C)(C)P(c1ccccc1-c1ccccc1)C(C)(C)C	ligand	JohnPhos
-282	FB(F)F	cat	Boron trifluoride
+282	FB(F)F	lewis_acid	Boron trifluoride
 283	c1ccc(-c2ccccc2P(C2CCCCC2)C2CCCCC2)cc1	ligand	CyJohnPhos
 284	NC1CCCCC1N	ligand	1,2-Cyclohexanediamine
 285	[Al]	red	Aluminium hydride
@@ -329,7 +329,7 @@
 327	c1cnc2c(c1)ccc1cccnc12	ligand	phenanthroline
 328	[S]	red	Sulfur
 329	CCN(CC)CC.Cl	acid	YE2111500
-330	[Br-].[Br-].[Zn+2]	cat	Zinc bromide
+330	[Br-].[Br-].[Zn+2]	lewis_acid	Zinc bromide
 331	O=C(Cl)Cl	activator	Phosgene
 332	C1COCCOCCOCCOCCO1	ligand	15-Crown-5
 333	I	red	Hydroiodic acid
@@ -367,11 +367,11 @@
 365	[Sn]	cat	Tin
 366	Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1	activator	Butylated hydroxytoluene
 367	Cc1ccccc1S(=O)(=O)O	acid	2-Toluenesulfonic acid
-368	O=S(=O)([O-])C(F)(F)F.O=S(=O)([O-])C(F)(F)F.O=S(=O)([O-])C(F)(F)F.[Yb+3]	cat	Ytterbium(III) triflate
+368	O=S(=O)([O-])C(F)(F)F.O=S(=O)([O-])C(F)(F)F.O=S(=O)([O-])C(F)(F)F.[Yb+3]	lewis_acid	Ytterbium(III) triflate
 369	COB(OC)OC	reactant	Trimethyl borate
 370	O=S([O-])S(=O)(=O)[O-].[Na+].[Na+]	activator	Sodium metabisulfite
 371	O=C([O-])[O-].[Ag+2]	ox	Silver(2+) carbonate
-372	[I-].[I-].[Zn+2]	cat	Zinc iodide
+372	[I-].[I-].[Zn+2]	lewis_acid	Zinc iodide
 373	COC(=O)Cl	activator	Methyl chloroformate
 374	C[n+]1ccccc1Cl.[I-]	activator	2-Chloro-1-methylpyridinium iodide
 375	Oc1cccc2cccnc12	ligand	8-Hydroxyquinoline
@@ -412,7 +412,7 @@
 410	CP(C)C	red	Trimethylphosphine
 411	CCCCN	base	n-butylamine
 412	C=[N+]=[N-]	reactant	Diazomethane
-413	[Ce+3].[Cl-].[Cl-].[Cl-]	cat	cerium(iii) chloride
+413	[Ce+3].[Cl-].[Cl-].[Cl-]	lewis_acid	cerium(iii) chloride
 414	CCC(C)[BH-](C(C)CC)C(C)CC.[Li+]	red	L-selectride
 415	CC[N+](CC)(CC)S(=O)(=O)N=C([O-])OC	ox	Burgess reagent
 416	N#C[Cu]	cat	Copper(I) cyanide

@@ -253,7 +253,7 @@
 251	O=S(=O)(OS(=O)(=O)C(F)(F)F)C(F)(F)F	activator	Trifluoromethanesulfonic anhydride
 252	CC(=O)CC(C)C	solvent	4-Methylpentan-2-one
 253	ClB(Cl)Cl	lewis_acid	Boron trichloride
-254	CC=C(C)C	activator	2-Methylbut-2-ene
+254	CC=C(C)C	ambience	2-Methylbut-2-ene
 255	O=C([O-])O.[K+]	base	Potassium hydrogen carbonate
 256	O=C(O)C(=O)O	red	Oxalic acid
 257	[O-][Cl+3]([O-])([O-])O	ox	Perchloric acid

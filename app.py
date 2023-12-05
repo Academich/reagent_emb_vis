@@ -5,8 +5,8 @@ from dash import html
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 
-from figures import update_flat_chart, update_sphere_chart, update_class_selector
-import utils as ut
+from rendering.figures import update_flat_chart, update_sphere_chart, update_class_selector
+import rendering.utils as ut
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)

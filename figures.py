@@ -38,6 +38,7 @@ def generate_sphere():
         x=surface_points[0] * shrink,
         y=surface_points[1] * shrink,
         z=surface_points[2] * shrink,
+        visible=False,
         hoverinfo='skip',
         contours=dict(x=dict(show=False), y=dict(show=False), z=dict(show=False)),
         colorscale=[[0, surface_color], [1, surface_color]],  # Single color, no gradient

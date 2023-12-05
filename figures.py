@@ -22,8 +22,8 @@ def update_flat_chart(df: pd.DataFrame):
         }
     )],
         'layout': go.Layout(
-            xaxis={'title': "axis 1"},
-            yaxis={'title': "axis 2"},
+            xaxis=dict(title="axis 1", showgrid=False),
+            yaxis=dict(title="axis 2", showgrid=False),
             width=800,
             height=800,
             title=f"Points displayed: {len(df)}"

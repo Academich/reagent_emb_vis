@@ -53,13 +53,11 @@ def build_pmi_matrix(data: Iterable[list[str]],
     sum_single = sum(count_single.values())
     sum_pair = sum(count_pair.values())
 
-    pmi_samples = {}
     data, rows, cols = [], [], []
     for (x, y), n in count_pair.items():
         rows.append(reagent_to_index[x])
         cols.append(reagent_to_index[y])
         data.append(math.log((n / sum_pair) / (count_single[x] / sum_single) / (count_single[y] / sum_single)))
-        pmi_samples[(x, y)] = data[-1]
     return csc_matrix((data, (rows, cols)))
 
 

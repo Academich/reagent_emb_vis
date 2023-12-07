@@ -165,20 +165,20 @@ def main(args: Namespace) -> None:
     save_path.mkdir(parents=True, exist_ok=True)
 
     reactions_final = reactants + ">>" + products
-    save_path_src = (save_path / f"transformations-{reactions_final.shape[0]}").with_suffix(".txt")
+    save_path_reactions = (save_path / f"transformations-{reactions_final.shape[0]}").with_suffix(".txt")
     reactions_final.to_csv(
-        save_path_src,
+        save_path_reactions,
         index=False,
         header=False,
     )
-    save_path_tgt = (save_path / f"reagents-{reagents.shape[0]}").with_suffix(".txt")
+    save_path_reagents = (save_path / f"reagents-{reagents.shape[0]}").with_suffix(".txt")
     reagents.to_csv(
-        save_path_tgt,
+        save_path_reagents,
         index=False,
         header=False,
     )
-    print("Transformations saved in %s" % save_path_src)
-    print("Reagents saved in %s" % save_path_tgt)
+    print("Transformations saved in %s" % save_path_reactions)
+    print("Reagents saved in %s" % save_path_reagents)
 
 
 if __name__ == '__main__':

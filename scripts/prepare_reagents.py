@@ -147,7 +147,7 @@ def main(args: Namespace) -> None:
     print("Removing uncharged reagent species")
     charged_reagent_species = {k for k in reagent_occurrence_counter if ut.smi_charge(k) != 0}
 
-    undesirable_reagents = rare_reagents | charged_reagent_species | {"N#N"}
+    undesirable_reagents = rare_reagents | charged_reagent_species
     reagents = reagents.apply(
         lambda smi: remove_certain_reagents(smi, undesirable_reagents, separator=";")
     )

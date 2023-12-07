@@ -47,6 +47,17 @@ REAGENT_STANDARD_REPLACEMENT = {
     "ClCCl.Cl[Pd]Cl.[Fe+2].c1ccc(P(c2ccccc2)[c-]2cccc2)cc1.c1ccc(P(c2ccccc2)[c-]2cccc2)cc1": ["ClCCl",
                                                                                               "Cl[Pd]Cl.[Fe+2].c1ccc(P(c2ccccc2)[c-]2cccc2)cc1.c1ccc(P(c2ccccc2)[c-]2cccc2)cc1"],
     "Cl[Pd]Cl.[CH]1[CH][CH][C](P(c2ccccc2)c2ccccc2)[CH]1.[CH]1[CH][CH][C](P(c2ccccc2)c2ccccc2)[CH]1.[Fe]": [
-        "Cl[Pd]Cl.[Fe+2].c1ccc(P(c2ccccc2)[c-]2cccc2)cc1.c1ccc(P(c2ccccc2)[c-]2cccc2)cc1"]
+        "Cl[Pd]Cl.[Fe+2].c1ccc(P(c2ccccc2)[c-]2cccc2)cc1.c1ccc(P(c2ccccc2)[c-]2cccc2)cc1"],
+    "[CH2-]CCC.[Li+]": ["[Li]CCCC"],
+    "CC(C)NC(C)C.[Li]": ["CC(C)[N-]C(C)C.[Li+]"],
+    "C[Si](C)(C)N[Si](C)(C)C.[Li]": ["C[Si](C)(C)[N-][Si](C)(C)C.[Li+]"],
+    "CC(C)O[Ti](OC(C)C)(OC(C)C)OC(C)C": ["CC(C)[O-].CC(C)[O-].CC(C)[O-].CC(C)[O-].[Ti+4]"],
+    "BrB(Br)Br.ClCCl": "BrB(Br)Br.ClCCl".split("."),
+    "C1CCOC1.CC(C)O": "C1CCOC1.CC(C)O".split("."),
+    "CCOCC.Cl": "CCOCC.Cl".split("."),
+    "CC(=O)O.CC(=O)O.Ic1ccccc1": "CC(=O)OI(OC(C)=O)c1ccccc1",
+    "CC(=O)O.CCO": "CC(=O)O.CCO".split("."),
+    "CCCCCC.ClCCl": "CCCCCC.ClCCl".split("."),
+    "C1CCOC1.CC(=O)O": "C1CCOC1.CC(=O)O".split(".")
 
 }

@@ -96,8 +96,9 @@ def standard_smiles_information(smiles: pd.Series,
 def main(args) -> None:
     target = pd.read_csv(args.input, header=None)[0]
     print("Counting reagents...")
-    reagent_occurrence_counter = get_reagent_statistics(target, separator=args.separator)
-    i2r = {i: smi for i, (smi, count) in enumerate(reagent_occurrence_counter.most_common()) if count >= args.min_count}
+    reagent_occurrence_counter = get_reagent_statistics(target,
+                                                        separator=args.separator).most_common(args.max_reagents)
+    i2r = {i: smi for i, (smi, count) in enumerate(reagent_occurrence_counter) if count >= args.min_count}
     r2i = {v: k for k, v in i2r.items()}
     smiles = [None] * len(i2r)
     for i in i2r:
@@ -142,4 +143,6 @@ if __name__ == '__main__':
                         help="Separator between reagent SMILES in the input.")
     parser.add_argument("--emb_dim", "-d", type=int,
                         help="Embedding dimensionality for the SVD of the matrix of PMI scores between reagents.")
+    parser.add_argument("--max_reagents", "-n", type=int, default=None,
+                        help="Maximum number of the most common reagents to consider.")
     main(parser.parse_args())

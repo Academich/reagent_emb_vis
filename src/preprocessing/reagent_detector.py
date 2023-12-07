@@ -72,6 +72,8 @@ def assign_reaction_roles_mixed(smi: str) -> str:
     """
     try:
         role_assigned_rxn = assign_reaction_roles_by_rdkit(smi)
+    except AttributeError:
+        return assign_reaction_roles_by_aam(smi)
     except RuntimeError:
         return assign_reaction_roles_by_aam(smi)
     except ValueError:

@@ -55,9 +55,13 @@ def build_pmi_matrix(data: Iterable[list[str]],
 
     data, rows, cols = [], [], []
     for (x, y), n in count_pair.items():
+        pair_pmi_score = math.log((n / sum_pair) / (count_single[x] / sum_single) / (count_single[y] / sum_single))
         rows.append(reagent_to_index[x])
         cols.append(reagent_to_index[y])
-        data.append(math.log((n / sum_pair) / (count_single[x] / sum_single) / (count_single[y] / sum_single)))
+        data.append(pair_pmi_score)
+        rows.append(reagent_to_index[y])
+        cols.append(reagent_to_index[x])
+        data.append(pair_pmi_score)
     return csc_matrix((data, (rows, cols)))
 
 

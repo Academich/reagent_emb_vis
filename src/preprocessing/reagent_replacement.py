@@ -55,7 +55,7 @@ REAGENT_STANDARD_REPLACEMENT = {
     "BrB(Br)Br.ClCCl": "BrB(Br)Br.ClCCl".split("."),
     "C1CCOC1.CC(C)O": "C1CCOC1.CC(C)O".split("."),
     "CCOCC.Cl": "CCOCC.Cl".split("."),
-    "CC(=O)O.CC(=O)O.Ic1ccccc1": "CC(=O)OI(OC(C)=O)c1ccccc1",
+    "CC(=O)O.CC(=O)O.Ic1ccccc1": ["CC(=O)OI(OC(C)=O)c1ccccc1"],
     "CC(=O)O.CCO": "CC(=O)O.CCO".split("."),
     "CCCCCC.ClCCl": "CCCCCC.ClCCl".split("."),
     "C1CCOC1.CC(=O)O": "C1CCOC1.CC(=O)O".split(".")

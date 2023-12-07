@@ -125,6 +125,7 @@ def main(args) -> None:
     else:
         smiles_info = pd.DataFrame(smiles)
         smiles_info.columns = ["smiles"]
+    smiles_info["count"] = pd.Series([i for _, i in reagent_occurrence_counter])
     result = pd.concat((projection_result, smiles_info), axis=1)
     result.to_csv(args.output, index=False)
 

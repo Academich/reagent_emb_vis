@@ -17,7 +17,7 @@ def __smi_mol_counter(separator: str, smi_col: pd.Series):
     return smi_col.apply(lambda s: Counter(s.split(separator))).sum()
 
 
-def get_reagent_statistics(smi_col: pd.Series, separator: str = ";", chunk_size: int = 1000):
+def get_reagent_statistics(smi_col: pd.Series, separator: str = ";", chunk_size: int = 1000) -> Counter:
     """
     Obtain frequency of the molecular occurrence among the reactants/reagents of all reactions
     in the form of a Counter. Uses process pool for faster processing.

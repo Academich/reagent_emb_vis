@@ -58,6 +58,14 @@ REAGENT_STANDARD_REPLACEMENT = {
     "CC(=O)O.CC(=O)O.Ic1ccccc1": ["CC(=O)OI(OC(C)=O)c1ccccc1"],
     "CC(=O)O.CCO": "CC(=O)O.CCO".split("."),
     "CCCCCC.ClCCl": "CCCCCC.ClCCl".split("."),
-    "C1CCOC1.CC(=O)O": "C1CCOC1.CC(=O)O".split(".")
-
+    "C1CCOC1.CC(=O)O": "C1CCOC1.CC(=O)O".split("."),
+    "CCOCC.ClCCl": "CCOCC.ClCCl".split("."),
+    "C1CCOC1.CCCCCCC.CCc1ccccc1": "C1CCOC1.CCCCCCC.CCc1ccccc1".split("."),
+    "C1CCOC1.C[Si](C)(C)[N-][Si](C)(C)C.[Li+]": ["C1CCOC1", "C[Si](C)(C)[N-][Si](C)(C)C.[Li+]"],
+    "ClCCl.c1ccncc1": "ClCCl.c1ccncc1".split("."),
+    "CCOC(C)=O.CCOCC": "CCOC(C)=O.CCOCC".split("."),
+    "C1CCOC1.CCOC(C)=O": "C1CCOC1.CCOC(C)=O".split("."),
+    "CO.CS(C)=O": "CO.CS(C)=O".split("."),
+    "CC(C)[Mg]Cl.[Cl-].[Li+]": ["CC(C)[Mg]Cl", "[Cl-].[Li+]"],
+    "C[Mg+].[Br-]": ["C[Mg]Br"]
 }

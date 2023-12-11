@@ -108,7 +108,6 @@ def main(args) -> None:
     for i in i2r:
         smiles[i] = i2r[i]
     target = target.apply(lambda x: [r for r in x.split(args.separator) if r in r2i])
-    target = target[target.astype(bool)]  # dropping empty records
 
     print("Building PMI matrix...")
     pmi_scores = build_pmi_matrix(target, r2i)

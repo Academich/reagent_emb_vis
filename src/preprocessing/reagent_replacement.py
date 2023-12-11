@@ -67,5 +67,9 @@ REAGENT_STANDARD_REPLACEMENT = {
     "C1CCOC1.CCOC(C)=O": "C1CCOC1.CCOC(C)=O".split("."),
     "CO.CS(C)=O": "CO.CS(C)=O".split("."),
     "CC(C)[Mg]Cl.[Cl-].[Li+]": ["CC(C)[Mg]Cl", "[Cl-].[Li+]"],
-    "C[Mg+].[Br-]": ["C[Mg]Br"]
+    "C[Mg+].[Br-]": ["C[Mg]Br"],
+    "CCOC(C)=O.Cc1ccccc1": "CCOC(C)=O.Cc1ccccc1".split("."),
+    "C1CCOC1.CC#N": "C1CCOC1.CC#N".split("."),
+    "CC#N.ClCCl": "CC#N.ClCCl".split("."),
+    "C1COCCO1.CO": "C1COCCO1.CO".split(".")
 }

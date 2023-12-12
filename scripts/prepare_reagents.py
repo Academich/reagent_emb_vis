@@ -127,6 +127,13 @@ def main(args: Namespace) -> None:
     reagents = reaction_parts[1]
     products = reaction_parts[2]
 
+    # Delete entries with empty reactants or products
+    invalid_reactions = (reactants == "") | (products == "")
+    print(f"Removing reactions with no reactants or no products: {invalid_reactions.sum()}")
+    reactants = reactants[~invalid_reactions]
+    reagents = reagents[~invalid_reactions]
+    products = products[~invalid_reactions]
+
     print("Removing bound water")
     reagents = reagents.apply(lambda x: remove_bound_water(x, separator=";"))
 

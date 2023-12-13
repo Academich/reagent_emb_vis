@@ -104,7 +104,7 @@
 102,CI,reactant,Methyl iodide
 103,O=C(OO)c1cccc(Cl)c1,ox,MCPBA
 104,Cl[Sn]Cl,red,Tin(II) chloride
-105,O=N[O-].[Na+],red,Sodium nitrite
+105,O=N[O-].[Na+],ox,Sodium nitrite
 106,CC(=O)OI1(OC(C)=O)(OC(C)=O)OC(=O)c2ccccc21,ox,Dess–Martin periodinane
 107,N#N,ambience,Nitrogen
 108,COC(C)(C)C,solvent,Methyl tert-butyl ether
@@ -227,7 +227,7 @@
 225,COCCOCCOC,solvent,Diglyme
 226,CN.Cl,acid,Methylammonium chloride
 227,CC(C)(C)ON=O,ox,"1,1-Dimethylethyl nitrite"
-228,[Ca+2].[Cl-].[Cl-],cat,Calcium chloride
+228,[Ca+2].[Cl-].[Cl-],ambience,Calcium chloride
 229,[O-][Cl+3]([O-])([O-])O,ox,Perchloric acid
 230,CN,base,Methylamine
 231,CC(C)(C)OC(=O)N=NC(=O)OC(C)(C)C,activator,Di-tert-butyl azodicarboxylate
@@ -237,7 +237,7 @@
 235,COC(OC)N(C)C,reactant,DMF-DMA
 236,ClB(Cl)Cl,lewis_acid,Boron trichloride
 237,CC(=O)CC(C)C,solvent,4-Methylpentan-2-one
-238,BrCCBr,solvent,EDB
+238,BrCCBr,reactant,EDB
 239,CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21,ligand,Xantphos
 240,CCOP(=O)(C#N)OCC,activator,DEPC
 241,O=C([O-])O.[K+],base,Potassium hydrogen carbonate
@@ -277,7 +277,7 @@
 275,S=C=S,solvent,Carbon disulfide
 276,O=C(C=Cc1ccccc1)C=Cc1ccccc1.O=C(C=Cc1ccccc1)C=Cc1ccccc1.O=C(C=Cc1ccccc1)C=Cc1ccccc1.[Pd].[Pd],cat,Pd2(dba)3
 277,CCN1CCOCC1,base,NEM
-278,O=C([O-])[O-].[Ca+2],cat,Calcium carbonate
+278,O=C([O-])[O-].[Ca+2],ambience,Calcium carbonate
 279,O=S1(=O)CCCC1,solvent,Sulfolane
 280,[Al],red,Aluminium hydride
 281,CCC[N+](CCC)(CCC)CCC.O=[Ru](=O)(=O)[O-],ox,Tetrapropylammonium perruthenate
@@ -474,7 +474,7 @@
 472,CC1CO1,reactant,Propylene oxide
 473,C=C,reactant,Ethylene
 474,CC(C)CCO,solvent,3-Methylbutan-1-ol
-475,BrP(Br)Br,reactant,Phosphorus tribromide
+475,BrP(Br)Br,ox,Phosphorus tribromide
 476,CCCC[N+](CCCC)(CCCC)CCCC.[OH-],base,Tetrabutylammonium hydroxide
 477,[Ru],cat,Ruthenium
 478,C[S+](C)C.[I-],reactant,Trimethylsulfonium iodide
@@ -506,7 +506,7 @@
 504,O=C[O-].[Na+],red,Sodium formate
 505,O=C1CCCCC1,reactant,Cyclohexanone
 506,CCOP(=O)(Cl)OCC,activator,Diethyl chlorophosphate
-507,ClC(Cl)(Cl)C(Cl)(Cl)Cl,solvent,Hexachloroethane
+507,ClC(Cl)(Cl)C(Cl)(Cl)Cl,ox,Hexachloroethane
 508,CC1(C)OB(B2OC(C)(C)C(C)(C)O2)OC1(C)C,red,Bis(pinacolato)diboron
 509,CC(=O)OO,ox,Peracetic acid
 510,CNN,red,Cyanamide
@@ -516,7 +516,7 @@
 514,C[O+](C)C.F[B-](F)(F)F,reactant,Trimethyloxonium tetrafluoroborate
 515,CCCCOCCCC,solvent,Dibutyl ether
 516,B.[Na],red,Sodium and borane
-517,O=P(c1ccccc1)(c1ccccc1)c1ccccc1,ligand,Triphenylphosphine oxide
+517,O=P(c1ccccc1)(c1ccccc1)c1ccccc1,activator,Triphenylphosphine oxide
 518,O=C([O-])[O-].[NH4+].[NH4+],base,Ammonium carbonate
 519,c1ccc(OP(Oc2ccccc2)Oc2ccccc2)cc1,ligand,Triphenyl phosphite
 520,CN(C)C(=O)Cl,reactant,Dimethylcarbamoyl chloride
@@ -536,7 +536,7 @@
 534,O=C(Cl)c1cccc(Cl)c1,reactant,3-Chlorobenzoyl chloride
 535,O=C(O)CN(CCN(CC(=O)O)CC(=O)O)CC(=O)O,ligand,Ethylenediaminetetraacetic acid
 536,Cl[Hg]Cl,cat,Mercury(II) chloride
-537,O=S(=O)([O-])C(F)(F)F.[Ag+],activator,Silver(I) triflate
+537,O=S(=O)([O-])C(F)(F)F.[Ag+],ox,Silver(I) triflate
 538,C1=CCC=CC1,red,"1,4-Cyclohexadiene"
 539,F.c1ccncc1,base,Hydrogen fluoride-pyridine complex
 540,[Li+].[O-][Cl+3]([O-])([O-])[O-],ox,Lithium perchlorate
@@ -564,7 +564,7 @@
 562,C1CNC1,base,Azetidine
 563,COC(=O)OC,reactant,Dimethyl carbonate
 564,C[N+](C)(C)Cc1ccccc1.[Cl-],base,Benzyltrimethylazanium chloride
-565,O=S(=O)(O)Cl,ox,Chlorosulfuric acid
+565,O=S(=O)(O)Cl,reactant,Chlorosulfuric acid
 566,COC(C)(C)OC,ambience,"2,2-Dimethoxypropane"
 567,CN(C)c1ccccc1-c1ccccc1P(C1CCCCC1)C1CCCCC1,ligand,DavePhos
 568,CC(C)[Mg]Cl.[Cl-].[Li+],reactant,Lithium dichloro(1-methylethyl)-magnesate
@@ -582,7 +582,7 @@
 580,CCOP(=O)(OCC)On1nnc2ccccc2c1=O,activator,DEPBT
 581,CCOC(C)=O.Cc1ccccc1,unk,Ethyl acetate - toluene (1:1)
 582,c1ccc2[nH]ccc2c1,base,???
-583,C[P+](C)(C)CC#N.[I-],reactant,(Cyanomethyl)(trimethyl)phosphonium iodide
+583,C[P+](C)(C)CC#N.[I-],activator,(Cyanomethyl)(trimethyl)phosphonium iodide
 584,C=CC(=O)Cl,reactant,Acryloyl chloride
 585,BrCC1CC1,reactant,(Bromomethyl)cyclopropane
 586,C1=COCCC1,reactant,Dihydropyran

@@ -11,6 +11,16 @@ from rdkit.Chem import Draw
 from rdkit.Chem.Draw import rdDepictor
 
 
+def add_numerical_labels_for_classes(df: pd.DataFrame) -> pd.DataFrame:
+    if "class" in df.columns:
+        df["numerical_label"] = df["class"].map({v: i for i, v in enumerate(sorted(df["class"].unique()))})
+    else:
+        df["numerical_label"] = 0
+        df["class"] = "All molecules"
+        df["name"] = ''
+    return df
+
+
 def parse_uploaded_content(contents) -> pd.DataFrame | Div:
     """
     Parses a Pandas DataFrame that is uploaded to the app
@@ -19,12 +29,7 @@ def parse_uploaded_content(contents) -> pd.DataFrame | Div:
     decoded = base64.b64decode(content_string)
     try:
         df = pd.read_csv(io.StringIO(decoded.decode("utf-8")))
-        if "class" in df.columns:
-            df["numerical_label"] = df["class"].map({v: i for i, v in enumerate(sorted(df["class"].unique()))})
-        else:
-            df["numerical_label"] = 0
-            df["class"] = "All molecules"
-            df["name"] = ''
+        df = add_numerical_labels_for_classes(df)
     except Exception as e:
         return Div(["There was an error processing this file."])
 

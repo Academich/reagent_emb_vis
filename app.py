@@ -1,3 +1,7 @@
+from argparse import ArgumentParser
+from pathlib import Path
+
+import pandas as pd
 from rdkit import RDLogger
 
 import dash
@@ -58,6 +62,8 @@ app.layout = html.Div(children=[
 
 ])
 
+DEFAULT_PATH = Path("data").resolve() / "default" / "uspto_aam_rgs_min_count_100_d_50.csv"
+
 
 @app.callback(
     [Output('uploaded-csv', 'data')],
@@ -71,8 +77,12 @@ def store_uploaded_data(contents, filename):
         parsed_data = ut.parse_uploaded_content(contents)
         if parsed_data is not None:
             return [parsed_data.to_json(date_format='iso', orient='split')]
-
-    return [None]
+    try:
+        parsed_data = pd.read_csv(DEFAULT_PATH)
+        parsed_data = ut.add_numerical_labels_for_classes(parsed_data)
+        return [parsed_data.to_json(date_format='iso', orient='split')]
+    except Exception as e:
+        return [None]
 
 
 @app.callback(
@@ -196,4 +206,11 @@ def update_img_from_flat_map(hoverData):
 
 if __name__ == "__main__":
     RDLogger.DisableLog('rdApp.*')
-    app.run_server(debug=True)
+
+    parser = ArgumentParser()
+    parser.add_argument("--host", type=str, default="127.0.0.1", help="IP address for the app.")
+    parser.add_argument("--port", type=int, default=8050, help="Port for the app.")
+    parser.add_argument("--debug", action="store_true", help="Flag for the debug mode.")
+    args = parser.parse_args()
+
+    app.run(host=args.host, port=args.port, debug=args.debug)

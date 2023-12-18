@@ -1,3 +1,5 @@
+from rdkit import RDLogger
+
 import dash
 import dash_dangerously_set_inner_html as dhtml
 from dash import dcc
@@ -193,4 +195,5 @@ def update_img_from_flat_map(hoverData):
 
 
 if __name__ == "__main__":
+    RDLogger.DisableLog('rdApp.*')
     app.run_server(debug=True)

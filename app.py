@@ -54,10 +54,6 @@ app.layout = html.Div(children=[
         dcc.Graph(id='graph', className='six columns', style={'display': 'none'}),
     ], style={'width': '50%', 'display': 'inline-block'}),
 
-    html.Div([
-        html.Button("Clear selected", id='clear-selected-button', n_clicks=0, style={'display': 'none'}),
-        html.Div(id='selected-indices')
-    ])
 ])
 
 
@@ -83,7 +79,6 @@ def store_uploaded_data(contents, filename):
      Output('pie-chart', 'style'),
      Output('range-slider-div', 'style'),
      Output('filter-input', 'style'),
-     Output('clear-selected-button', 'style'),
 
      Output('range-slider', 'min'),
      Output('range-slider', 'max'),
@@ -119,7 +114,7 @@ def display_hidden_elements(contents):
         {i: str(i) for i in range(range_min, range_max, range_max // 10)},
         [range_min, range_max]
     ]
-    style = [{'display': 'block'}] * 6
+    style = [{'display': 'block'}] * 5
 
     return style + range_slider_params + [update_flat_chart(data), update_class_selector(classes),
                                           classes]
@@ -176,38 +171,6 @@ def update_graph(n_clicks, selected_class, slider_value, pattern_string, content
         return update_flat_chart(data)
     else:
         return update_sphere_chart(data)
-
-
-@app.callback(
-    Output('selected-index-store', 'data'),
-    Output('selected-indices', 'children'),
-    Input('graph', 'clickData'),
-    State('selected-index-store', 'data')
-)
-def store_hover_text(clickData, stored_data):
-    if clickData is not None and 'points' in clickData:
-        # Extract hover text from the clicked point
-        clicked_point = clickData['points'][0]
-        text = clicked_point.get('hovertext', None)
-
-        if text is not None:
-            # Append the hover text to the stored data list
-            stored_data.append(text)
-            return stored_data, str(stored_data)
-
-    raise PreventUpdate
-
-
-@app.callback(
-    Output('selected-index-store', 'data', allow_duplicate=True),
-    Output('selected-indices', 'children', allow_duplicate=True),
-    Input('clear-selected-button', 'n_clicks'),
-    prevent_initial_call=True
-)
-def store_hover_text(n_clicks):
-    if n_clicks is None:
-        raise PreventUpdate
-    return [], None
 
 
 @app.callback(

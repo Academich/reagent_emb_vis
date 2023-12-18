@@ -34,7 +34,6 @@ app.layout = html.Div(children=[
 
     html.Div([
         dcc.Store(id='selected-class', data=None),
-        dcc.Store(id='selected-index-store', data=[]),
 
         # Pie chart as clickable buttons
         html.Div([dcc.Input(value='', id='filter-input', placeholder='Filter: SMARTS pattern',

@@ -36,16 +36,21 @@ app.layout = html.Div(children=[
         dcc.Store(id='selected-class', data=None),
 
         # Pie chart as clickable buttons
-        html.Div([dcc.Input(value='', id='filter-input', placeholder='Filter: SMARTS pattern',
-                            debounce=True, style={'display': 'none'})]),
-        html.Div([dcc.Graph(
-            id='pie-chart',
-            config={'staticPlot': False},  # Enable interactivity
-            style={'display': 'none'}
-        )]),
         html.Div([
+            html.H6('Selector button: click on sections to hide/show reagent roles.',
+                    style={'text-align': 'center'}),
+            dcc.Graph(
+                id='pie-chart',
+                config={'staticPlot': False},  # Enable interactivity
+                style={'display': 'none'}
+            )]),
+        html.Div([
+            html.H6('Range slider: drag both ends to display only the points with indices in the selected range.',
+                    style={'text-align': 'center'}),
             dcc.RangeSlider(min=0, max=2, step=1, persistence=True, id="range-slider")
-        ], className='row', style={'display': 'none'}, id="range-slider-div")
+        ], className='row', style={'display': 'none'}, id="range-slider-div"),
+        html.Div([dcc.Input(value='', id='filter-input', placeholder='Filter: SMARTS pattern',
+                            debounce=True, style={'display': 'none'})])
     ]),
 
     html.Div([

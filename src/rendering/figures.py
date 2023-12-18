@@ -103,6 +103,5 @@ def update_class_selector(classes: dict[str, list]):
                 marker=dict(colors=colors, line=dict(color='grey', width=linewidth))
             )
         ],
-        layout=go.Layout(title="Selector button: click on sections to hide/show reagent roles",
-                         legend=dict(itemclick=False, itemdoubleclick=False)))
+        layout=go.Layout(legend=dict(itemclick=False, itemdoubleclick=False)))
     return figure

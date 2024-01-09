@@ -1,12 +1,15 @@
-from typing import Callable
+import math
+from typing import Callable, Iterable
 from collections import Counter
-from functools import lru_cache
+from functools import lru_cache, partial
+from itertools import combinations
 from multiprocessing import Pool, cpu_count
-from functools import partial
 
 from pandas import Series, concat
 import numpy as np
 from tqdm import tqdm
+
+from scipy.sparse import csc_matrix
 
 from rdkit import Chem
 from rdkit import RDLogger
@@ -91,7 +94,7 @@ def __smi_mol_counter(separator: str, smi_col: Series):
     return smi_col.apply(lambda s: Counter(s.split(separator))).sum()
 
 
-def get_reagent_statistics(smi_col: Series, separator: str = ".", chunk_size: int = 1000):
+def get_reagent_statistics(smi_col: Series, separator: str = ";", chunk_size: int = 1000) -> Counter:
     """
     Obtain frequency of the molecular occurrence among the reactants/reagents of all reactions
     in the form of a Counter. Uses process pool for faster processing.
@@ -105,6 +108,50 @@ def get_reagent_statistics(smi_col: Series, separator: str = ".", chunk_size: in
         bigger_counters = p.map(f, [smi_col[i: i + chunk_size] for i in range(0, n_entries, chunk_size)])
 
     return np.sum(bigger_counters)
+
+
+def build_pmi_dict(data: Iterable[list[str]]) -> dict[tuple[str, str], float]:
+    """
+    Builds a dictionary mapping a pair of (reagent) SMILES to its PMI score (point-wise mutual information).
+    :param data: A collection of sets of reagents used together in one reaction.
+    :return: A dictionary containing PMI scores.
+    """
+    count_single = Counter()
+    count_pair = Counter()
+    for entry in data:
+        for reagent in entry:
+            count_single[reagent] += 1
+        for reagent_1, reagent_2 in map(sorted, combinations(entry, 2)):
+            count_pair[(reagent_1, reagent_2)] += 1
+
+    sum_single = sum(count_single.values())
+    sum_pair = sum(count_pair.values())
+
+    pair_pmi_scores = {}
+    for (x, y), n in count_pair.items():
+        pair_pmi_scores[(x, y)] = math.log2(
+            (n / sum_pair) / (count_single[x] / sum_single) / (count_single[y] / sum_single))
+    return pair_pmi_scores
+
+
+def pmi_dict_to_sparse_matrix(smiles_pair_pmi_scores: dict[tuple[str, str], float],
+                              reagent_to_index: dict[str, int]) -> csc_matrix:
+    """
+    Builds a sparse matrix with PMI scores (point-wise mutual information)
+    between reagents.
+    :param smiles_pair_pmi_scores: A dictionary mapping SMILES pairs to PMI scores.
+    :param reagent_to_index: A dictionary mapping a reagent SMILES to its serial number.
+    :return: A symmetric sparse matrix containing PMI scores.
+    """
+    data, rows, cols = [], [], []
+    for (x, y), s in smiles_pair_pmi_scores.items():
+        rows.append(reagent_to_index[x])
+        cols.append(reagent_to_index[y])
+        data.append(s)
+        rows.append(reagent_to_index[y])
+        cols.append(reagent_to_index[x])
+        data.append(s)
+    return csc_matrix((data, (rows, cols)))
 
 
 # === Tools for faster data processing on CPU using pool of processes ===

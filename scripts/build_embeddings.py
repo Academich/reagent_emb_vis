@@ -1,68 +1,12 @@
-import math
 import argparse
-from typing import Iterable
-from functools import partial
-from multiprocessing import Pool, cpu_count
-from collections import Counter
-from itertools import combinations
 
 import pandas as pd
 import numpy as np
-from scipy.sparse import csc_matrix
+
 from scipy.sparse.linalg import svds
 from umap import UMAP
 
-
-def __smi_mol_counter(separator: str, smi_col: pd.Series):
-    return smi_col.apply(lambda s: Counter(s.split(separator))).sum()
-
-
-def get_reagent_statistics(smi_col: pd.Series, separator: str = ";", chunk_size: int = 1000) -> Counter:
-    """
-    Obtain frequency of the molecular occurrence among the reactants/reagents of all reactions
-    in the form of a Counter. Uses process pool for faster processing.
-    :param: chunk_size: size of a subset of the data to process at once
-    :returns: One counter with reagent occurrences for all reactions in the specified pandas Series.
-    """
-    n_entries = smi_col.shape[0]
-    f = partial(__smi_mol_counter, separator)
-
-    with Pool(cpu_count()) as p:
-        bigger_counters = p.map(f, [smi_col[i: i + chunk_size] for i in range(0, n_entries, chunk_size)])
-
-    return np.sum(bigger_counters)
-
-
-def build_pmi_matrix(data: Iterable[list[str]],
-                     reagent_to_index: dict[str, int]) -> csc_matrix:
-    """
-    Builds a sparse matrix of PMI scores (point-wise mutual information)
-    between reagents given the collection of co-occuring sets of reagents.
-    :param data: A collection of sets reagents used together in one reaction.
-    :param reagent_to_index: A dictionary mapping a reagent SMILES to its serial number.
-    :return: A sparse matrix containing PMI scores.
-    """
-    count_single = Counter()
-    count_pair = Counter()
-    for entry in data:
-        for reagent in entry:
-            count_single[reagent] += 1
-        for reagent_1, reagent_2 in map(sorted, combinations(entry, 2)):
-            count_pair[(reagent_1, reagent_2)] += 1
-
-    sum_single = sum(count_single.values())
-    sum_pair = sum(count_pair.values())
-
-    data, rows, cols = [], [], []
-    for (x, y), n in count_pair.items():
-        pair_pmi_score = math.log((n / sum_pair) / (count_single[x] / sum_single) / (count_single[y] / sum_single))
-        rows.append(reagent_to_index[x])
-        cols.append(reagent_to_index[y])
-        data.append(pair_pmi_score)
-        rows.append(reagent_to_index[y])
-        cols.append(reagent_to_index[x])
-        data.append(pair_pmi_score)
-    return csc_matrix((data, (rows, cols)))
+from preprocessing.utils import get_reagent_statistics, build_pmi_dict, pmi_dict_to_sparse_matrix
 
 
 def umap_projection(embeddings: np.array) -> pd.DataFrame:
@@ -110,7 +54,7 @@ def main(args) -> None:
     target = target.apply(lambda x: [r for r in x.split(args.separator) if r in r2i])
 
     print("Building PMI matrix...")
-    pmi_scores = build_pmi_matrix(target, r2i)
+    pmi_scores = pmi_dict_to_sparse_matrix(build_pmi_dict(target), r2i)
 
     print("Factorizing PMI matrix...")
     embeddings, _, _ = svds(pmi_scores, k=args.emb_dim)
@@ -121,7 +65,7 @@ def main(args) -> None:
     projection_result = umap_projection(embeddings)
 
     if args.standard is not None:
-        standard_reagents = pd.read_csv(args.standard, index_col=[0], sep='\t')
+        standard_reagents = pd.read_csv(args.standard, index_col=[0])
         smiles_info = standard_smiles_information(pd.Series(smiles),
                                                   dict(standard_reagents.set_index("smiles")["name"]),
                                                   dict(standard_reagents.set_index("smiles")["class"]))

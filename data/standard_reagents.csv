@@ -415,7 +415,7 @@
 413,O=C(Cl)c1ccccc1,reactant,Benzoyl chloride
 414,CCC(C)[BH-](C(C)CC)C(C)CC.[Li+],red,L-selectride
 415,CCc1ccccc1,solvent,Ethylbenzene
-416,C[S-].[Na+],reactant,Sodium thiomethoxide
+416,C[S-].[Na+],base,Sodium thiomethoxide
 417,CCCCN,base,n-butylamine
 418,O=[O+][O-],ox,Ozone
 419,O=[PH2]O,red,Phosphinic acid

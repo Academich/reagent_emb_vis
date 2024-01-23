@@ -82,7 +82,7 @@ For more information, run `python3 build_embeddings.py --help`.
 The default reagent embeddings were built with the following command:
 
 ```python
-python3 scripts/build_embeddings.py -i uspto_aam_reagents/reagents-1128297.txt --standard data/standard_reagents.csv -d 50 -o data/uspto_aam_rgs_min_count_100_d_50.csv --min_count 100
+python3 scripts/build_embeddings.py -i data/uspto_aam_reagents/reagents-1128297.txt --standard data/standard_reagents.csv -d 50 -o data/uspto_aam_rgs_min_count_100_d_50.csv --min_count 100
 ```
 
 Upload a CSV file build by the `build_embeddings.py` script.

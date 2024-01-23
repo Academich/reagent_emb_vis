@@ -74,7 +74,7 @@ x,y,theta,phi,smiles,class,name,count
 0.21163294,5.4819903,75.58316,10.482232,[I-].[Na+],red,Sodium iodide,4203
 -0.94568354,5.8453918,-14.96514,-24.181652,[Zn],red,Zinc,4182
 1.8710129,4.645711,-52.248318,-92.2911,CCCCO,solvent,n-butanol,4142
-1.8173329,6.3953147,6.501485,-100.02783,C1CCNCC1,base,Piperidine,4121
+1.8173329,6.3953147,6.501485,-100.02783,C1CCNCC1,activator,Piperidine,4121
 0.53733695,3.3627179,29.807003,-25.017471,[C].[Pd],cat,Palladium on carbon,3966
 2.3699644,5.297126,19.871534,60.07497,NN,red,Hydrazine,3907
 2.357998,3.3448248,42.29671,101.77161,CC(=O)[O-].CC(=O)[O-].[Pd+2],cat,Palladium(II) acetate,3856
@@ -83,7 +83,7 @@ x,y,theta,phi,smiles,class,name,count
 3.4358797,4.4283004,-72.85963,-33.603477,CCOC(=O)N=NC(=O)OCC,activator,Diethyl azodicarboxylate,3722
 3.4821231,4.542197,33.930855,16.91414,c1c[nH]cn1,base,Imidazole,3684
 1.5184214,5.0900493,-16.925663,2.4530709,Br,acid,Hydrobromic acid,3634
-2.0952713,6.191112,51.144302,-19.098625,CC(=O)OC(C)=O,solvent,Ethanoic anhydride,3594
+2.0952713,6.191112,51.144302,-19.098625,CC(=O)OC(C)=O,reactant,Ethanoic anhydride,3594
 0.20008186,5.438139,-37.543674,-9.156379,[I-].[K+],red,Potassium iodide,3589
 -0.36630192,4.6765738,-32.827568,14.128234,C[Si](C)(C)[N-][Si](C)(C)C.[Li+],base,Lithium bis(trimethylsilyl)amide,3561
 3.274599,7.436959,81.81762,37.231434,CC(C)(C)O,solvent,Tert-butanol,3456
@@ -121,7 +121,7 @@ x,y,theta,phi,smiles,class,name,count
 1.3588434,5.714052,104.32821,20.356194,CCC(C)=O,solvent,Butanone,1977
 -1.0312879,8.468172,-77.41145,-134.87025,CN(C)[P+](On1nnc2ccccc21)(N(C)C)N(C)C.F[P-](F)(F)(F)(F)F,activator,BOP reagent,1901
 -0.31037852,7.5007296,83.311424,25.77204,CS(=O)(=O)Cl,activator,Methanesulfonyl chloride,1887
-1.9628676,5.260905,-13.902102,64.59573,[Cl-].[Li+],ambience,Lithium chloride,1852
+1.9628676,5.260905,-13.902102,64.59573,[Cl-].[Li+],cat,Lithium chloride,1852
 1.855251,7.3950553,103.03357,-15.117445,[BH4-].[Li+],red,Lithium borohydride,1803
 1.174472,6.19378,30.118504,54.12344,C[Si](C)(C)Cl,reactant,Chlorotrimethylsilane,1791
 1.2108878,4.147533,-168.66693,29.684206,I[Cu]I,cat,Copper iodide,1762
@@ -131,21 +131,21 @@ x,y,theta,phi,smiles,class,name,count
 3.4168603,4.3936367,160.59436,132.91365,CCCCP(CCCC)CCCC,red,Tributylphosphine,1667
 2.2249358,6.2348666,-50.585682,21.573584,O=C=O,ambience,Carbon dioxide,1651
 1.8400652,5.9711175,19.203077,75.100494,[Cl-].[Cl-].[Zn+2],lewis acid,Zinc chloride,1642
-0.9444349,8.595109,-9.04542,-47.744064,CN,base,Methylamine,1633
+0.9444349,8.595109,-9.04542,-47.744064,CN,reactant,Methylamine,1633
 2.2027125,6.686358,55.729782,60.69503,CS(=O)(=O)O,acid,Methanesulfonic acid,1628
-3.8872273,6.4178376,14.851922,-67.16645,O=C(OOC(=O)c1ccccc1)c1ccccc1,ox,Benzoyl peroxide,1620
-3.4805725,5.3412147,-58.331936,-7.2090244,CCCC[N+](CCCC)(CCCC)CCCC.[Br-],base,Tetra-n-butylammonium bromide,1609
+3.8872273,6.4178376,14.851922,-67.16645,O=C(OOC(=O)c1ccccc1)c1ccccc1,activator,Benzoyl peroxide,1620
+3.4805725,5.3412147,-58.331936,-7.2090244,CCCC[N+](CCCC)(CCCC)CCCC.[Br-],cat,Tetra-n-butylammonium bromide,1609
 2.2904887,5.7112374,145.27768,-33.93378,CC(=O)[O-].CC(=O)[O-].[Cu+2],cat,Copper(II) acetate,1526
 1.2822689,5.7802014,-38.662315,-29.36279,C1CCCCC1,solvent,Cyclohexane,1519
 -0.37245685,7.764332,8.396674,12.873659,CC(C)COC(=O)Cl,activator,IBCF,1504
 2.0099409,7.591919,168.36348,10.825547,CCOCC.FB(F)F,lewis acid,Boron trifluoride diethyl etherate,1503
-0.06337866,5.2728157,24.84886,26.680094,CCCC[N+](CCCC)(CCCC)CCCC.[I-],red,Tetra-n-butylammonium iodide,1486
+0.06337866,5.2728157,24.84886,26.680094,CCCC[N+](CCCC)(CCCC)CCCC.[I-],cat,Tetra-n-butylammonium iodide,1486
 1.6514826,3.7743866,64.09404,49.30844,[F-].[K+],base,Potassium fluoride,1447
 -0.7680537,8.5661,-22.899494,-12.45321,On1nnc2cccnc21,activator,1-Hydroxy-7-azabenzotriazole,1440
 0.74548036,3.546805,-17.215202,9.513598,[Pt],cat,Platinum,1407
-2.0700011,7.043206,2.1595654,34.755363,C[Al](C)C,base,Trimethylaluminum,1405
+2.0700011,7.043206,2.1595654,34.755363,C[Al](C)C,cat,Trimethylaluminum,1405
 1.1181794,4.3248396,120.39696,-65.09921,[Cu],cat,Copper,1388
-1.7970638,5.613659,119.14392,-14.322585,CC(=O)[O-].[NH4+],acid,Ammonium acetate,1364
+1.7970638,5.613659,119.14392,-14.322585,CC(=O)[O-].[NH4+],reactant,Ammonium acetate,1364
 2.086241,8.277951,-45.39409,35.74402,COc1ccccc1,solvent,Anisole,1330
 1.7082778,3.6900687,-5.0090127,143.42705,[Cs+].[F-],base,Caesium fluoride,1319
 -0.23850885,4.643121,124.302055,51.74162,C[Si](C)(C)[N-][Si](C)(C)C.[Na+],base,NaHMDS,1308
@@ -154,15 +154,15 @@ x,y,theta,phi,smiles,class,name,count
 3.3461003,4.3848233,140.81451,-2.4380295,O=C(N=NC(=O)N1CCCCC1)N1CCCCC1,activator,"Diazene-1,2-diylbis(piperidin-1-ylmethanone)",1245
 1.2451003,7.2911425,88.933395,-6.2105083,Cc1cccc(C)n1,base,"2,6-lutidine",1191
 -0.29074216,8.405751,174.25978,154.0963,CN(C)c1ccccn1,base,2-(Dimethylamino)pyridine,1190
-0.1814279,5.207012,-69.36616,63.42054,C1COCCOCCOCCOCCOCCO1,ligand,18-Crown-6,1173
-0.29041636,7.698373,76.66368,44.469036,O=C(OC(=O)C(F)(F)F)C(F)(F)F,solvent,Trifluoroacetic anhydride,1172
+0.1814279,5.207012,-69.36616,63.42054,C1COCCOCCOCCOCCOCCO1,cat,18-Crown-6,1173
+0.29041636,7.698373,76.66368,44.469036,O=C(OC(=O)C(F)(F)F)C(F)(F)F,reactant,Trifluoroacetic anhydride,1172
 -1.2364753,5.3626103,4.291935,20.50934,CC(C)[Mg]Cl,reactant,Chloro(isopropyl)magnesium,1158
 -0.9676347,4.820794,58.295807,-89.45644,[Li]C(C)(C)C,base,Tert-butyllithium,1155
 -1.0401182,8.42058,-83.82049,85.09253,F[P-](F)(F)(F)(F)F.c1ccc2c(c1)nnn2O[P+](N1CCCC1)(N1CCCC1)N1CCCC1,activator,PyBop,1145
 1.4420934,5.9856696,19.452257,-31.283154,CC(C)OC(C)C,solvent,Diisopropyl ether,1138
 2.1545722,4.985784,82.84539,16.845345,OCCO,solvent,Ethylene glycol,1135
 -0.39589265,5.5072427,-5.6424613,-7.6284814,CN(C)P(=O)(N(C)C)N(C)C,solvent,HMPA,1133
-1.6543186,6.746919,-52.95674,-3.203834,C1CCNC1,base,Pyrrolidine,1126
+1.6543186,6.746919,-52.95674,-3.203834,C1CCNC1,reactant,Pyrrolidine,1126
 1.7053677,5.8897367,118.65449,-60.923923,CCCCC,solvent,Pentane,1125
 2.1831586,5.667985,70.31078,87.38872,C,cat,???,1124
 -0.2507565,7.343165,-90.10398,-8.787332,CCOC(=O)Cl,activator,Ethyl chloroformate,1116
@@ -173,9 +173,9 @@ x,y,theta,phi,smiles,class,name,count
 -0.1892623,8.055166,-124.01847,31.572914,CCCP1(=O)OP(=O)(CCC)OP(=O)(CCC)O1,activator,PPACA,1025
 2.0585804,3.5115325,42.055077,57.982597,[C-]#N.[C-]#N.[Zn+2],reactant,Zinc cyanide,1003
 2.9416163,6.704886,-50.844166,-1.6874622,Cc1ccc(S(=O)(=O)[O-])cc1.c1cc[nH+]cc1,acid,Pyridinium p-toluenesulfonate,995
-0.9860513,8.561932,-147.44247,28.140684,CNC,base,Dimethylamine,981
+0.9860513,8.561932,-147.44247,28.140684,CNC,reactant,Dimethylamine,981
 1.764541,5.2281346,51.79001,-82.620674,Cl.c1ccncc1,acid,Pyridine hydrochloride,979
-3.1185944,6.5344124,40.086033,-42.874485,[Br-].[K+],ambience,Potassium bromide,971
+3.1185944,6.5344124,40.086033,-42.874485,[Br-].[K+],cat,Potassium bromide,971
 3.3620868,6.6998525,-42.231754,-36.670185,O=[Cr](=O)([O-])Cl.c1cc[nH+]cc1,ox,Pyridinium chlorochromate,958
 2.5340586,7.4735017,113.77488,-61.211582,O=S(=O)([O-])[O-].[Mg+2],cat,Magnesium sulfate,942
 1.7939137,6.587656,90.32841,30.654268,CCNCC,base,Diethylamine,933
@@ -191,42 +191,42 @@ x,y,theta,phi,smiles,class,name,count
 -0.18722059,4.7276177,45.151188,136.42711,C[Si](C)(C)[N-][Si](C)(C)C.[K+],base,Potassium hexamethyldisilazide,803
 1.6520063,4.3970423,41.848053,102.139725,COCCO,solvent,Methoxyethanol,800
 -0.9204104,4.661923,26.481037,4.9697413,CN(C)CCN(C)C,base,TMEDA,798
-2.475532,5.9706907,106.52475,-15.562673,O=S(=O)([O-])O.[K+],base,Potassium bisulfate,796
+2.475532,5.9706907,106.52475,-15.562673,O=S(=O)([O-])O.[K+],acid,Potassium bisulfate,796
 1.8793722,7.9732437,64.91967,-48.37872,CSC,red,Dimethyl sulfide,785
 3.0250142,6.541378,38.556076,-5.0981984,N#CC1=C(C#N)C(=O)C(Cl)=C(Cl)C1=O,ox,DDQ,782
 2.0818806,8.077186,26.461039,76.70737,O=S(=O)(O)C(F)(F)F,acid,Trifluoromethanesulfonic acid,767
 1.6047035,5.8356633,27.568956,-16.100466,[K],red,Potassium,754
-3.4712124,5.41439,-4.4726796,46.242374,CCCC[N+](CCCC)(CCCC)CCCC.O=S(=O)([O-])O,base,Tetrabutylammonium bisulfate,730
+3.4712124,5.41439,-4.4726796,46.242374,CCCC[N+](CCCC)(CCCC)CCCC.O=S(=O)([O-])O,cat,Tetrabutylammonium bisulfate,730
 1.0083262,7.0788283,76.9016,45.87545,Cl[Sn](Cl)(Cl)Cl,ox,Tin(IV) chloride,726
 3.8617554,6.428356,46.310974,-29.62413,O=C1CCC(=O)N1Br,ox,N-Bromosuccinimide,723
 1.5697482,7.1450963,265.64883,10.831463,C[P+](c1ccccc1)(c1ccccc1)c1ccccc1.[Br-],reactant,Methyltriphenylphosphonium bromide,719
 -0.7239112,8.522006,-73.20446,12.60311,Oc1cccc2[nH]nnc12,activator,1H-Benzotriazol-4-ol,687
 1.3532864,5.736162,33.151173,5.2098627,[Li],red,Lithium,682
-3.5862474,5.4918723,86.28686,-7.205436,CC[N+](CC)(CC)Cc1ccccc1.[Cl-],base,Benzyltriethylammonium chloride,682
+3.5862474,5.4918723,86.28686,-7.205436,CC[N+](CC)(CC)Cc1ccccc1.[Cl-],cat,Benzyltriethylammonium chloride,682
 2.6188622,3.3406444,-36.22633,-70.98098,Cl[Pd]Cl,cat,Palladium(II) chloride,680
 2.340667,5.7905574,98.304375,22.573717,ClCl,ox,Chlorine,676
 0.6333576,6.872223,29.678507,-152.11731,ClP(Cl)(Cl)(Cl)Cl,ox,Phosphorus pentachloride,653
-2.6481047,7.5825315,-93.38241,-36.36903,O=S(=O)([O-])[O-].[Na+].[Na+],base,Sodium sulfate,652
+2.6481047,7.5825315,-93.38241,-36.36903,O=S(=O)([O-])[O-].[Na+].[Na+],cat,Sodium sulfate,652
 0.70538867,6.6307945,-209.4189,17.47531,O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3,activator,Phosphorus pentoxide,648
 0.6428017,5.725048,50.175926,-70.21594,COS(=O)(=O)OC,reactant,Dimethyl sulfate,648
 1.8086269,6.504953,-114.43351,-21.687052,Cc1ccc(S(=O)(=O)Cl)cc1,activator,Tosyl chloride,643
-0.81545067,6.508134,-33.566944,-45.293884,CN(C)c1ccccc1,base,"N,N-Dimethylaniline",640
+0.81545067,6.508134,-33.566944,-45.293884,CN(C)c1ccccc1,reactant,"N,N-Dimethylaniline",640
 2.349288,5.0185747,-36.805573,-15.662596,Oc1ccccc1,solvent,Phenol,639
 2.517653,4.505188,-104.43501,-21.589512,c1ccc(Oc2ccccc2)cc1,solvent,Diphenyl ether,637
-1.0164007,8.109909,-22.195549,70.92323,Cl.NO,acid,Hydroxyamine hydrochloride,635
+1.0164007,8.109909,-22.195549,70.92323,Cl.NO,reactant,Hydroxyamine hydrochloride,635
 1.6118885,5.5424123,32.188335,-25.998205,O=O,ox,Molecular oxygen,633
 2.749472,2.5144916,-45.355576,107.789734,O=C(O)C1CCCN1,ligand,DL-Proline,629
 2.532067,5.5512905,92.31774,-101.17769,C1CN2CCN1CC2,base,DABCO,617
 -1.3178672,5.563614,2.3124757,-26.20924,C[Mg]Br,reactant,Bromo(methyl)magnesium,616
 3.9551153,7.1028986,-64.745766,61.274555,C[Si](C)(C)I,reactant,Trimethylsilyl iodide,607
 1.3829207,5.7085533,174.28793,-9.870476,COCCOCCOC,solvent,Diglyme,604
-0.80534464,8.6632595,-116.67186,5.965399,CN.Cl,acid,Methylammonium chloride,592
+0.80534464,8.6632595,-116.67186,5.965399,CN.Cl,reactant,Methylammonium chloride,592
 -0.4963765,8.81079,-66.951355,69.55872,CC(C)N=C=NC(C)C,activator,"N,N′-diisopropylcarbodiimide",591
 1.5491852,6.313091,55.42769,72.15906,[O-][Cl+3]([O-])([O-])O,ox,Perchloric acid,587
 -0.31646097,6.587197,57.538548,40.40027,[Ca+2].[Cl-].[Cl-],ambience,Calcium chloride,584
 3.4610195,4.412193,84.33893,-20.798782,CC(C)(C)OC(=O)N=NC(=O)OC(C)(C)C,activator,Di-tert-butyl azodicarboxylate,583
 1.4659468,5.509233,84.31928,86.18005,CC(=O)CC(C)C,solvent,4-Methylpentan-2-one,572
-2.7558951,4.6301975,-76.246796,25.34429,C1COCCN1,base,Morpholine,561
+2.7558951,4.6301975,-76.246796,25.34429,C1COCCN1,reactant,Morpholine,561
 1.5805007,4.9367805,-92.048706,-22.069336,CC(C)(C)ON=O,ox,"1,1-Dimethylethyl nitrite",551
 2.1116133,6.5001736,35.60761,-25.405895,ClB(Cl)Cl,lewis acid,Boron trichloride,545
 2.746348,2.5501568,7.604612,-8.425712,CNCCNC,ligand,"1,2-Dimethylethylenediamine",545
@@ -239,7 +239,7 @@ x,y,theta,phi,smiles,class,name,count
 4.4784656,7.878229,111.028275,-77.2269,O=[Cr](=O)=O,ox,Chromium trioxide,512
 -1.1532308,8.308221,96.26742,25.236155,CCOP(=O)(C#N)OCC,activator,DEPC,506
 1.4141732,6.3666606,74.67863,-3.3332567,O=C([O-])O.[K+],base,Potassium hydrogen carbonate,505
-1.6318291,6.1204596,69.42551,31.161623,Nc1ccccc1,base,Aniline,501
+1.6318291,6.1204596,69.42551,31.161623,Nc1ccccc1,reactant,Aniline,501
 3.6799273,6.9576716,41.754883,155.17505,[Na+].[O-]Cl,ox,Sodium hypochlorite,500
 2.0027945,5.856667,-24.190128,29.033089,NCCN,base,Ethylenediamine,498
 1.7110779,7.800942,15.088218,-5.1785383,B.CSC,red,Di-methylsulfide borane,494
@@ -252,7 +252,7 @@ x,y,theta,phi,smiles,class,name,count
 4.6150284,3.1546693,-127.51711,57.261826,c1ccc(P(c2ccccc2)c2ccc3ccccc3c2-c2c(P(c3ccccc3)c3ccccc3)ccc3ccccc23)cc1,ligand,BINAP,476
 -1.1166487,8.270573,155.10889,34.832806,Br[P+](N1CCCC1)(N1CCCC1)N1CCCC1.F[P-](F)(F)(F)(F)F,activator,PyBroP,476
 2.1421103,5.8463626,-7.2833786,-74.98879,O=S(=O)([O-])[O-].[Cu+2],cat,Copper(II) sulfate,475
-1.6611371,5.217932,-54.97814,5.179625,[Br-].[Li+],base,Lithium bromide,470
+1.6611371,5.217932,-54.97814,5.179625,[Br-].[Li+],cat,Lithium bromide,470
 1.8466533,7.6210313,-31.982565,36.42587,O=C(O)C(=O)O,red,Oxalic acid,469
 3.1801543,6.473736,168.77756,-14.2999525,CC1(C)C2CCC1(CS(=O)(=O)O)C(=O)C2,acid,Camphorsulfonic acid,461
 2.1499085,3.4100828,-4.4445014,-26.983738,O=C(C=Cc1ccccc1)C=Cc1ccccc1.O=C(C=Cc1ccccc1)C=Cc1ccccc1.O=C(C=Cc1ccccc1)C=Cc1ccccc1.[Pd].[Pd],cat,Pd2(dba)3,454
@@ -286,7 +286,7 @@ x,y,theta,phi,smiles,class,name,count
 3.3678138,7.4948997,12.319358,27.503609,[Na+].[O-][Cl+][O-],ox,Sodium chlorite,364
 3.3158183,7.457416,93.92644,52.317314,CC=C(C)C,ambience,2-Methylbut-2-ene,362
 0.20168845,5.6104593,43.613266,-14.186432,[I-].[Li+],red,Lithium iodide,362
-1.3775347,6.2233934,45.923756,-6.8105755,NC(N)=O,solvent,Urea,360
+1.3775347,6.2233934,45.923756,-6.8105755,NC(N)=O,reactant,Urea,360
 -0.19355172,5.58253,5.7886643,32.399067,C=CCBr,reactant,Allyl bromide,360
 -1.1582628,8.1293955,4.454824,59.982185,O=C1OCCN1P(=O)(Cl)N1CCOC1=O,activator,BOP-CL,360
 2.6147604,6.8066635,1.1133007,-23.51495,CCOC(OCC)OCC,reactant,Triethyl orthoformate,358
@@ -297,31 +297,31 @@ x,y,theta,phi,smiles,class,name,count
 -1.2287836,5.687692,66.73934,14.507766,CC[Mg]Br,reactant,Ethylmagnesium bromide,350
 2.5417614,4.6786056,-107.811806,18.857126,[S],red,Sulfur,345
 0.9270874,8.691377,160.85648,-53.947914,CCN1CCOCC1,base,NEM,342
-1.4005117,7.2266803,-22.53741,11.795747,CC(C)N,base,2-Aminopropane,341
+1.4005117,7.2266803,-22.53741,11.795747,CC(C)N,reactant,2-Aminopropane,341
 4.5921726,3.1201043,98.754105,-49.595932,CC(C)c1cc(C(C)C)c(-c2ccccc2P(C2CCCCC2)C2CCCCC2)c(C(C)C)c1,ligand,XPhos,338
 4.34614,7.795953,-45.92196,35.744442,O=[Mn](=O)(=O)[O-].[K+],ox,Potassium permanganate,337
 0.4810641,6.731265,-20.420769,80.4614,ClP(Cl)Cl,ox,Phosphorus trichloride,337
 3.7831724,6.3343906,48.11145,43.06036,CCCC[SnH](CCCC)CCCC,red,Tributyltin hydride,333
 0.0611781,6.6388693,-32.866856,-44.278446,C[Si](C)(C)N[Si](C)(C)C,base,Hexamethyldisilazane,331
 1.856635,4.9619627,-32.92572,12.087177,I,red,Hydroiodic acid,329
-0.7658577,8.7255745,110.36009,28.445524,NC1CC1,base,Cyclopropanamine,321
+0.7658577,8.7255745,110.36009,28.445524,NC1CC1,reactant,Cyclopropanamine,321
 2.0570312,4.2518187,135.97812,-112.074585,CCOCCO,solvent,2-Ethoxyethanol,320
-3.6416717,5.9799585,-80.96187,37.979916,O=S(=O)([O-])O.[Na+],base,Sodium bisulfate,314
+3.6416717,5.9799585,-80.96187,37.979916,O=S(=O)([O-])O.[Na+],acid,Sodium bisulfate,314
 3.2243662,5.336734,36.006,30.972267,CCCCN(CCCC)CCCC,base,Tributylamine,314
 -0.0680099,6.5926576,57.568413,52.86196,NC(CO)(CO)CO,ambience,Tris(hydroxymethyl)aminomethane,309
 1.195441,5.896715,54.067467,22.839945,CCCC[Sn](=O)CCCC,cat,Dibutyloxotin,308
-2.3311605,6.1759653,39.843018,71.79322,C1COCCOCCOCCOCCO1,ligand,15-Crown-5,308
+2.3311605,6.1759653,39.843018,71.79322,C1COCCOCCOCCOCCO1,cat,15-Crown-5,308
 3.3616428,5.434882,-52.07676,18.028801,OCCOCCO,solvent,Diethylene glycol,303
 3.815687,4.9420824,58.46936,-15.138904,CCC#N,solvent,Propionitrile,303
 1.4747782,5.422483,-33.486908,30.819712,C1N2CN3CN1CN(C2)C3,base,Hexamine,302
-1.4695711,5.986118,128.839,41.19213,[C]=O,ambience,Carbon monoxide,301
+1.4695711,5.986118,128.839,41.19213,[C]=O,reactant,Carbon monoxide,301
 3.3399727,7.2490497,-31.730772,-42.30931,O=P([O-])(O)O.[K+],base,Monopotassium phosphate,298
 1.2413442,5.386727,73.68473,-31.233377,Cc1c(CCO)sc[n+]1Cc1ccccc1.[Cl-],cat,3-Benzyl-5-(2-hydroxyethyl)-4-methylthiazolium chloride,296
 1.0234421,4.70633,38.608257,-8.791223,Cl[Cu]Cl,cat,Copper(II) chloride,295
-3.5179045,5.468141,-111.47804,52.61961,CCN(CC)CC.Cl,acid,Triethylamine hydrochloride,294
-0.97991806,8.446715,141.6828,14.823656,CCN,base,Ethanimine,293
+3.5179045,5.468141,-111.47804,52.61961,CCN(CC)CC.Cl,base,Triethylamine hydrochloride,294
+0.97991806,8.446715,141.6828,14.823656,CCN,reactant,Ethylamine,293
 2.0340786,5.394909,-128.77643,-53.99544,[N-]=[N+]=[N-].[Na+],reactant,Sodium azide,293
-2.7716837,4.7939153,-15.21644,62.30145,NCCO,base,Ethanolamine,293
+2.7716837,4.7939153,-15.21644,62.30145,NCCO,reactant,Ethanolamine,293
 -1.318823,5.6497912,-3.9202492,36.237843,BrCCBr,reactant,EDB,290
 1.8776451,5.596547,3.78476,-22.228823,OCC(F)(F)F,acid,"2,2,2-Trifluoroethanol",288
 3.0591702,6.3539352,99.10996,-19.829788,C[Si](C)(C)C=[N+]=[N-],reactant,Trimethylsilyldiazomethane,285
@@ -342,16 +342,16 @@ x,y,theta,phi,smiles,class,name,count
 1.0547448,5.8669043,-82.69328,43.930935,[Sn],cat,Tin,262
 2.734438,5.2531934,5.0523324,-39.89521,O=[Ag],ox,Oxosilver,260
 2.7395396,4.974703,32.057213,-54.229446,O=C([O-])[O-].[Ag+2],ox,Silver(2+) carbonate,257
-3.6899602,5.2415667,33.403988,33.80263,CCCC[N+](CCCC)(CCCC)CCCC.[Cl-],base,Tetrabutylammonium chloride,257
+3.6899602,5.2415667,33.403988,33.80263,CCCC[N+](CCCC)(CCCC)CCCC.[Cl-],cat,Tetrabutylammonium chloride,257
 1.6794071,4.9793673,-61.06011,22.850805,CN1CCN(C)C1=O,solvent,"1,3-Dimethyl-2-imidazolidinone",257
 -0.97492814,4.5818434,73.90807,1.8959693,CC1(C)CCCC(C)(C)N1,base,"2,2,6,6-Tetramethylpiperidine",254
-0.7971041,6.603755,236.28795,-32.49784,CCN(CC)c1ccccc1,base,"N,N-Diethylaniline",249
+0.7971041,6.603755,236.28795,-32.49784,CCN(CC)c1ccccc1,reactant,"N,N-Diethylaniline",249
 0.5578909,3.34842,1.5396044,-3.024077,[C].[OH-].[OH-].[Pd+2],cat,Palladium(2+) hydroxide - methane (1:2:1),249
-2.326801,5.8660493,9.870194,-81.51272,NCc1ccccc1,base,Benzylamine,247
+2.326801,5.8660493,9.870194,-81.51272,NCc1ccccc1,reactant,Benzylamine,247
 -0.59502023,8.451385,-90.11877,122.43881,O=C1CCC(=O)N1O,activator,N-Hydroxysuccinimide,244
 0.7152625,5.107459,10.790203,12.433066,[NH2-].[Na+],base,Sodamide,243
 3.4150932,7.360861,-0.21949637,90.06555,O=P([O-])(O)O.[Na+],base,Monosodium phosphate,242
-1.2346337,6.6488833,-0.5634838,63.10999,Sc1ccccc1,base,Thiophenol,240
+1.2346337,6.6488833,-0.5634838,63.10999,Sc1ccccc1,reactant,Thiophenol,240
 2.181139,4.3356175,64.74972,34.888,CN1CCCC1,base,1-Methylpyrrolidine,238
 2.0212722,7.9587393,-86.87377,45.550896,O=S(=O)([O-])C(F)(F)F.O=S(=O)([O-])C(F)(F)F.O=S(=O)([O-])C(F)(F)F.[Yb+3],lewis acid,Ytterbium(III) triflate,238
 1.7565435,5.5190573,48.3709,-42.789093,CCC(=O)O,acid,Propionic acid,236
@@ -360,19 +360,19 @@ x,y,theta,phi,smiles,class,name,count
 4.5472345,3.222565,23.324284,-11.830259,CC(C)(C)P(C(C)(C)C)C(C)(C)C,ligand,Tris(2-methyl-2-propanyl)phosphine,234
 2.7650323,6.7528296,24.355042,-45.63329,Cc1ccccc1S(=O)(=O)O,acid,2-Toluenesulfonic acid,231
 0.19279313,5.1418505,55.727962,7.8354235,[H-].[K+],base,Potassium hydride,231
-1.5116738,6.3320136,3.6108887,-4.3015046,CCCCN,base,n-butylamine,231
+1.5116738,6.3320136,3.6108887,-4.3015046,CCCCN,reactant,n-butylamine,231
 -1.0167848,7.7187314,-48.534897,101.185844,C[n+]1ccccc1Cl.[I-],activator,2-Chloro-1-methylpyridinium iodide,230
 1.6452714,5.6547904,-84.75968,68.50378,CCOC(=O)CBr,reactant,Ethyl bromoacetate,228
 -0.17789896,6.545466,-57.481743,37.30216,O=CC(O)C(O)C(O)C(O)CO,reactant,Glucose,227
 -1.3421788,5.666376,-21.023111,64.31837,CCBr,reactant,Bromoethane,222
 0.56704134,4.6708527,36.847675,13.1610985,[H-].[Li+],base,Lithium hydride,222
 -0.1816374,7.2305474,-66.72465,44.660248,COC(=O)Cl,activator,Methyl chloroformate,219
-3.4548674,5.4413953,77.29902,52.411156,CCCCCCCC[N+](C)(CCCCCCCC)CCCCCCCC.[Cl-],base,Methyltrioctylammoniumchloride,219
+3.4548674,5.4413953,77.29902,52.411156,CCCCCCCC[N+](C)(CCCCCCCC)CCCCCCCC.[Cl-],cat,Methyltrioctylammoniumchloride,219
 3.3844197,4.3331375,140.88351,60.57891,CN(C)C(=O)N=NC(=O)N(C)C,activator,TMAD,219
 2.6738107,5.6019483,241.6331,9.04182,Cn1ccnc1,base,1-Methylimidazole,218
 0.05554131,7.9955764,-61.288345,31.481316,CCCP(=O)=O,activator,Allylphosphinic acid,218
 2.6394813,7.0839496,81.20047,73.56888,CC=O,solvent,Acetaldehyde,214
-1.0648631,8.577776,103.32264,-126.221985,CNC.Cl,acid,Dimethylammonium chloride,214
+1.0648631,8.577776,103.32264,-126.221985,CNC.Cl,reactant,Dimethylammonium chloride,214
 2.205872,7.541712,-130.7816,33.416393,ICI,reactant,Diiodomethane,214
 3.9509718,4.8447757,23.157314,-18.298576,c1ccc(P(CCCP(c2ccccc2)c2ccccc2)c2ccccc2)cc1,ligand,DPPP,211
 3.6919353,7.0877256,-96.46072,85.744896,CC(=O)OI(OC(C)=O)c1ccccc1,ox,Iodobenzene diacetate,209
@@ -384,7 +384,7 @@ x,y,theta,phi,smiles,class,name,count
 2.7410555,5.1825104,-5.4163303,-33.48819,O=C1OC(C(O)CO)C([O-])=C1O.[Na+],red,Sodium ascorbate,200
 -0.8719169,8.138677,-165.31258,-28.145338,CN(C)C(N(C)C)=[N+]1N=[N+]([O-])c2ncccc21.F[P-](F)(F)(F)(F)F,activator,N-HATU,198
 2.0560725,5.238943,-54.18974,49.93458,O=C(O)c1ccccc1,acid,Benzoic acid,195
-1.087049,7.7861004,-17.274141,-47.80496,NO,red,Hydroxylamine,195
+1.087049,7.7861004,-17.274141,-47.80496,NO,reactant,Hydroxylamine,195
 0.8425215,3.6352198,7.613674,-72.04815,CC(=O)[O-].CC(=O)[O-].[Pb+2].[Pd],cat,Lindlar catalyst,194
 2.3263748,7.3504653,-67.96464,-23.204664,[I-].[I-].[Zn+2],lewis acid,Zinc iodide,194
 -0.07980029,5.030575,-57.441853,-29.79368,BrCc1ccccc1,reactant,Benzyl bromide,192
@@ -422,25 +422,25 @@ x,y,theta,phi,smiles,class,name,count
 3.506526,6.201849,136.36134,5.8864584,CCCCP(=CC#N)(CCCC)CCCC,reactant,(Tributylphosphoranylidene)acetonitrile,164
 2.7064636,4.561888,105.99284,44.080822,CCOC(=O)CSc1cnc(N)s1,reactant,Ethyl 2-((2-aminothiazol-5-yl)thio)acetate,164
 0.24830446,6.4866986,120.653,-29.62565,O=C(Cl)c1ccccc1,reactant,Benzoyl chloride,162
-0.825422,6.16856,62.460556,99.54108,Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1,activator,Butylated hydroxytoluene,162
--0.8300588,7.322841,20.476593,-18.4533,BrC(Br)(Br)Br,reactant,Tetrabromomethane,161
+0.825422,6.16856,62.460556,99.54108,Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1,ambience,Butylated hydroxytoluene,162
+-0.8300588,7.322841,20.476593,-18.4533,BrC(Br)(Br)Br,ox,Tetrabromomethane,161
 0.5114255,7.950321,-83.18795,40.65049,C[Si](C)(C)[O-].[K+],base,Potassium trimethylsilanolate,161
 4.692959,3.193882,64.63976,-46.32991,c1ccc(-c2ccccc2P(C2CCCCC2)C2CCCCC2)cc1,ligand,CyJohnPhos,161
 1.7951101,5.9646983,-2.3869634,37.205227,NC(N)=S,reactant,Thiourea,157
 2.1249385,4.1415405,66.89253,-37.073574,CC(C)CCO,solvent,3-Methylbutan-1-ol,157
 0.9043855,6.781283,-80.750084,-5.4796734,N#CBr,reactant,Cyanogen bromide,157
 2.3355794,7.2336907,25.696394,-10.918445,O=Cc1ccccc1,reactant,Benzaldehyde,155
-1.7385813,5.264463,123.3017,56.942627,CN1CCNCC1,base,1-Methylpiperazine,155
+1.7385813,5.264463,123.3017,56.942627,CN1CCNCC1,reactant,1-Methylpiperazine,155
 2.3746765,4.815945,32.690453,15.556189,OB(O)c1ccccc1,reactant,Phenylboronic acid,155
 -1.0013607,7.9670935,64.71059,-112.64869,O=P(Cl)(c1ccccc1)c1ccccc1,activator,Diphenylphosphinic chloride,154
 2.1864061,6.257606,90.28549,52.887707,COCC(C)O,solvent,1-Methoxy-2-propanol,152
-0.40225598,4.732832,156.16646,69.77959,C[S-].[Na+],reactant,Sodium thiomethoxide,152
+0.40225598,4.732832,156.16646,69.77959,C[S-].[Na+],base,Sodium thiomethoxide,152
 4.5866313,3.1470659,-14.317014,-18.148745,COc1cccc(OC)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1,ligand,SPhos,150
 -0.17482214,5.4911246,76.02891,86.072754,CCCI,reactant,1-Iodopropane,148
 1.0002844,7.391893,-51.28053,-34.651638,C[N+](C)(C)Cc1ccccc1.[OH-],base,Benzyltrimethylammonium hydroxide,147
 1.1015136,7.1484957,-74.85471,-24.848873,COC(OC)N(C)C,reactant,DMF-DMA,147
 3.8501284,5.3989496,63.696182,14.554326,Cl[Ru](Cl)Cl,cat,Ruthenium(III) Chloride,147
-2.067373,6.441864,1.659202,46.841393,CCCN,base,Propylamine,146
+2.067373,6.441864,1.659202,46.841393,CCCN,reactant,Propylamine,146
 4.633001,3.169678,86.224785,-43.303272,CC(C)(C)P(c1ccccc1-c1ccccc1)C(C)(C)C,ligand,JohnPhos,146
 4.3934264,7.8575096,35.79888,48.299095,c1nnn[nH]1,activator,1H-Tetrazole,144
 1.0080259,4.3146496,24.223234,-37.12367,O=[Cu],cat,Copper (II) oxide,143
@@ -448,7 +448,7 @@ x,y,theta,phi,smiles,class,name,count
 -0.07716749,7.2617702,114.41177,-42.41674,Clc1nc(Cl)nc(Cl)n1,ox,Cyanuric chloride,142
 2.2684302,5.3883843,-11.313815,8.948826,C=Cc1ccccc1,reactant,Styrene,142
 2.5550787,5.337188,-59.03766,-49.96302,Cc1cc(C)cc(C)c1,solvent,Mesitylene,142
-2.5570345,6.047427,45.18698,21.545256,OCc1ccccc1,solvent,Benzyl alcohol,141
+2.5570345,6.047427,45.18698,21.545256,OCc1ccccc1,reactant,Benzyl alcohol,141
 0.66464037,3.473706,-61.521973,9.721528,[Ru],cat,Ruthenium,140
 2.62956,5.4257436,-19.314442,30.395987,CC(=O)C#N,reactant,Pyruvonitrile,140
 -0.21196572,7.5668883,14.222484,-18.300234,CS(=O)(=O)OS(C)(=O)=O,activator,Mesyl anhydride,139
@@ -458,15 +458,15 @@ x,y,theta,phi,smiles,class,name,count
 1.4856266,5.537662,-38.83973,99.94169,NC=O,reactant,Carbamoyl,137
 1.8204497,6.8598757,-117.78447,8.870744,O=[O+][O-],ox,Ozone,136
 2.7427092,6.8805118,62.05074,-20.210573,C1CC[NH2+]CC1.CC(=O)[O-],acid,Phridine Acetate,135
-0.3423098,8.415786,-103.01535,-41.1063,CNOC.Cl,acid,"N,O-Dimethylhydroxylamine HCl",135
+0.3423098,8.415786,-103.01535,-41.1063,CNOC.Cl,reactant,"N,O-Dimethylhydroxylamine HCl",135
 1.8628675,5.727328,5.4292436,24.63047,CCCCOC(C)=O,solvent,Butyl acetate,134
 0.85274476,6.190872,-54.660305,44.933243,C=[N+]=[N-],reactant,Diazomethane,133
 -1.2599778,5.5032825,-148.76054,-145.97977,C[Mg]Cl,reactant,Chloro(methyl)magnesium,133
 4.461282,7.838895,184.25223,101.92277,O=S(=O)([O-])[O-].[Ag+2],ox,Silver(2+) sulfate,132
 2.1478167,5.165649,85.85935,-18.584139,CCC(C)(C)O,solvent,Tert-amyl Alcohol,132
-2.5933356,5.6587615,-48.897964,8.700321,[Br-].[Na+],ambience,Sodium bromide,131
+2.5933356,5.6587615,-48.897964,8.700321,[Br-].[Na+],cat,Sodium bromide,131
 3.422046,7.4798636,-56.518948,29.975533,NS(=O)(=O)O,ambience,Sulfamic acid,131
-2.2494805,7.274774,-30.451647,2.095906,CC[Zn]CC,base,Diethylzinc,131
+2.2494805,7.274774,-30.451647,2.095906,CC[Zn]CC,reactant,Diethylzinc,131
 2.7903693,5.0602083,127.297615,60.382545,Cc1ccccc1[P](c1ccccc1C)(c1ccccc1C)[Pd](Cl)(Cl)[P](c1ccccc1C)(c1ccccc1C)c1ccccc1C,cat,Dichloropalladium;tris(2-methylphenyl)phosphanium,131
 1.3283603,6.470257,-0.9586421,62.66066,[SiH3]c1ccccc1,red,Phenylsilane,131
 -0.8125942,8.07643,-1.8501097,78.62436,CCOC(=O)C(C#N)=NOC(N1CCOCC1)=[N+](C)C.F[P-](F)(F)(F)(F)F,activator,COMU,131
@@ -477,7 +477,7 @@ x,y,theta,phi,smiles,class,name,count
 2.0546262,5.7727933,-10.597335,72.185524,Brc1ccccc1,reactant,Bromobenzene,128
 1.847185,7.722681,-164.58368,-1.5872271,O=S(=O)([O-])C(F)(F)F.[Ag+],ox,Silver(I) triflate,128
 1.3749263,5.6774993,-36.854443,28.251944,c1ccc(P(C2CCCCC2)C2CCCCC2)c(-c2ccccc2P(C2CCCCC2)C2CCCCC2)c1,ligand,"2,2'-Biphenyldiylbis(dicyclohexylphosphine)",127
-1.5702415,6.654114,51.497566,52.70054,CNN,red,Cyanamide,126
+1.5702415,6.654114,51.497566,52.70054,CNN,reactant,Cyanamide,126
 4.466335,7.95026,16.847622,10.8274355,CC(=O)OO,ox,Peracetic acid,125
 1.919284,5.6556563,29.465425,-37.920044,CCCCOCCCC,solvent,Dibutyl ether,125
 -1.1104931,8.3747,-142.4926,-50.164448,CCOC(=O)C(C#N)=NOC(N(C)C)=[N+](C)C.F[B-](F)(F)F,activator,TOTU,125
@@ -501,7 +501,7 @@ x,y,theta,phi,smiles,class,name,count
 0.95694834,3.7034464,70.58882,-9.377475,[Co],cat,Cobalt,117
 2.7397397,2.51661,-74.13262,-8.576312,CN(C)CC(=O)O,ligand,"N,N-Dimethylglycine",117
 4.717073,3.062071,-14.304391,-55.844505,CC(C)Oc1cccc(OC(C)C)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1,ligand,RuPhos,117
-2.491951,6.481974,-88.48851,22.53935,CC(=O)OCc1c2ccccc2c(COC(C)=O)c2ccccc12,ligand,"9,10-Anthracenediylbis(methylene) diacetate",116
+2.491951,6.481974,-88.48851,22.53935,CC(=O)OCc1c2ccccc2c(COC(C)=O)c2ccccc12,cat,"9,10-Anthracenediylbis(methylene) diacetate",116
 0.77487487,6.051488,57.185623,-22.695646,CCCCCCCCCCCC(=O)[O-].CCCCCCCCCCCC(=O)[O-].CCCC[Sn+2]CCCC,cat,Dibutyltin dillaurate,116
 0.30020076,7.938704,-196.19287,-59.747337,CCOC(=O)N1c2ccccc2C=CC1OCC,activator,EEDQ,116
 0.7995449,6.012311,5.8638344,56.128384,CC1CO1,reactant,Propylene oxide,115
@@ -520,10 +520,10 @@ x,y,theta,phi,smiles,class,name,count
 1.044624,4.957923,145.10484,3.391335,F[B-](F)(F)F.[H+],acid,Fluoroboric acid,111
 2.0842776,7.488528,-118.38613,-17.045397,CN(C)c1cccc2cccc(N(C)C)c12,base,"1,8-bis(dimethylamino)naphthalene (Proton Sponge)",111
 1.9984655,5.367784,-83.23358,62.430866,[Cl-].[Cl-].[Cl-].[Ti+3],cat,Titanium (III) chloride,111
-3.5797856,5.4582634,20.398106,-16.673021,C[N+](C)(C)Cc1ccccc1.[Cl-],base,Benzyltrimethylazanium chloride,110
+3.5797856,5.4582634,20.398106,-16.673021,C[N+](C)(C)Cc1ccccc1.[Cl-],cat,Benzyltrimethylazanium chloride,110
 2.75895,7.6820865,-57.253963,41.94369,O=C(O)C(O)C(O)C(=O)O,acid,Tartaric acid,110
 -1.38873,5.583324,58.90663,-45.30688,C[Mg]I,reactant,Iodo(methyl)magnesium,110
-0.7060479,8.7284565,-46.82025,41.772495,C1CNC1,base,Azetidine,110
+0.7060479,8.7284565,-46.82025,41.772495,C1CNC1,reactant,Azetidine,110
 2.4255219,7.65834,87.06413,17.694288,CN(C)C(=O)Cl,reactant,Dimethylcarbamoyl chloride,109
 0.0401921,5.908289,-50.7725,-23.391062,CCOP(=O)(Cl)OCC,activator,Diethyl chlorophosphate,109
 4.777382,3.0032723,-4.560283,85.402016,COc1ccc(OC)c(P(C2CCCCC2)C2CCCCC2)c1-c1c(C(C)C)cc(C(C)C)cc1C(C)C,ligand,BrettPhos,109
@@ -543,7 +543,7 @@ x,y,theta,phi,smiles,class,name,count
 0.58941364,6.987741,-67.72017,-123.64674,C[Si](C)(C)C(C(N)=O)[Si](C)(C)C,reactant,Bis-trimethylsilylacetamide,103
 0.5517531,6.1121564,86.989105,48.189407,C=CC(=O)Cl,reactant,Acryloyl chloride,103
 -0.14176075,5.612832,44.462715,35.44866,COC(=O)OC,reactant,Dimethyl carbonate,103
-0.25560415,7.5543027,55.330765,28.812353,F.c1ccncc1,base,Hydrogen fluoride-pyridine complex,103
+0.25560415,7.5543027,55.330765,28.812353,F.c1ccncc1,ox,Hydrogen fluoride-pyridine complex,103
 1.7273672,4.543241,136.87355,64.96292,CB1OB(C)OB(C)O1,reactant,Trimethylboroxin,103
 2.705796,4.586092,99.86191,69.04144,C[S+](C)(C)=O.[I-],reactant,Trimethylsulfoxonium Iodide,102
 2.579624,4.739091,99.58106,69.08677,[B],red,Borane,101

@@ -17,6 +17,7 @@ def update_flat_chart(df: pd.DataFrame):
         mode='markers',
         marker={
             'size': 12,
+            'line': dict(color="black", width=1),
             'opacity': 0.6,
             'color': color
         }

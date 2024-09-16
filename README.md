@@ -1,7 +1,5 @@
 # Visualization of the reagent space
 
-This repository accompanies our preprint [A reagent-driven visual method for analyzing chemical reaction data](https://doi.org/10.26434/chemrxiv-2024-q9tc4).
-
 A web-app for the exploration of the embedding space of reagents used in reaction data.
 
 The app is a visual way of exploring the co-occurrence statistics of reagents in reactions.

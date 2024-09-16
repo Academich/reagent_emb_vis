@@ -102,6 +102,8 @@ def get_reagent_statistics(smi_col: Series, separator: str = ";", chunk_size: in
     :returns: One counter with reagent occurrences for all reactions in the specified pandas Series.
     """
     n_entries = smi_col.shape[0]
+    if not n_entries:
+        return Counter()
     f = partial(__smi_mol_counter, separator)
 
     with Pool(cpu_count()) as p:

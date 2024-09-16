@@ -123,6 +123,8 @@ def main(args: Namespace) -> None:
     reactions_trivial = standardized_reactions.apply(is_trivial_reaction)
     print(f"Removing reactions where product appears among reactants or reagents: {reactions_trivial.sum()}")
     standardized_reactions = standardized_reactions[~reactions_trivial]
+    if standardized_reactions.empty:
+        return print("All the reactions were removed :(")
 
     # Processing reagents
     reaction_parts = standardized_reactions.str.split(">", expand=True)

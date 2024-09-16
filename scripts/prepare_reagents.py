@@ -107,7 +107,10 @@ def main(args: Namespace) -> None:
 
     # Dropping bad reactions
 
+    n_with_dupl = standardized_reactions.shape[0]
     standardized_reactions.drop_duplicates(inplace=True)
+    n_no_dupl = standardized_reactions.shape[0]
+    print(f"Dropping duplicates: {n_with_dupl - n_no_dupl}. Reactions left: {n_no_dupl}")
 
     reactions_without_reagents = standardized_reactions.apply(lambda x: ">>" in x)
     print(f"Removing reactions without reagents: {reactions_without_reagents.sum()}")

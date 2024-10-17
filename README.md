@@ -1,6 +1,7 @@
 # Visualization of the reagent space
 
 A web-app for the exploration of the embedding space of reagents used in reaction data.
+Described in our paper [Curating Reagents in Chemical Reaction Data with an Interactive Reagent Space Map](https://link.springer.com/chapter/10.1007/978-3-031-72381-0_3).
 
 The app is a visual way of exploring the co-occurrence statistics of reagents in reactions.
 The app displays UMAP projections of reagent embeddings derived by decomposing the _PMI matrix_ of reagents with _singular value decomposition._
@@ -89,4 +90,19 @@ Upload a CSV file build by the `build_embeddings.py` script.
 
 ## Reports
 
-For the insights about reagents in USPTO please follow the notebook `notebooks/results.ipynb`.
+For the insights about reagents in USPTO and to reproduce the figures in the paper please follow the notebook `notebooks/results.ipynb`.
+
+## Citation
+```bibtex
+@inproceedings{andronov2024,
+  title={Curating Reagents in Chemical Reaction Data with an Interactive Reagent Space Map},
+  author={Andronov, Mikhail and Andronova, Natalia and Wand, Michael and Schmidhuber, J{\"u}rgen and Clevert, Djork-Arn{\'e}},
+  booktitle={International Workshop on AI in Drug Discovery},
+  pages={21--35},
+  year={2024},
+  publisher={Springer Nature Switzerland},
+  address={Cham},
+  doi={10.1007/978-3-031-72381-0_3}
+}
+```
+

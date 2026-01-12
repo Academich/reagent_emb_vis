@@ -70,7 +70,16 @@ The file `data/standard_reagents.csv` contains the information about ~600 reagen
 The entries in the file are ordered by occurrence frequency in the descending order.
 
 ## Dataset
-We download the USPTO dataset using `rxnutils` by executing the following commands from the `data` directory:
+We download the USPTO dataset using `rxnutils`.  
+**Warning:** `rxnutils` may have to be installed in a separate virtual environment because it is incompatible with `uv`.
+To install it in a separate environment, run the following commands:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install reaction-utils
+```
+
+Using the environment with `rxnutils`, execute the following commands from the `data` directory:
 
 ```python
 python -m rxnutils.data.uspto.download
@@ -84,7 +93,7 @@ It downloads the file `data/uspto_data.csv`. Then, we do the initial filtering o
 python3 -m rxnutils.pipeline.runner --pipeline uspto/pipeline.yml --data data/uspto_data.csv --output data/uspto_filtered.csv
 ```
 
-Finally, we extract the reagents from the filtered dataset:
+Finally, we extract the reagents from the filtered dataset. Run the following command using the project's `uv` environment:
 
 ```python
 python3 scripts/prepare_reagents.py -i data/uspto_filtered.csv --output_dir uspto_aam_reagents -c ReactionSmiles --reagents aam --fragment_grouping cxsmiles --canonicalization remove_aam --n_jobs 9 --min_reagent_occurrences 1 --verbose
